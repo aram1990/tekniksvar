@@ -2,7 +2,7 @@
 title: "Google-kontot är fullt – så frigör du lagringsutrymme i Gmail, Drive och Foto"
 description: "Säker guide för att rensa lagringsutrymme i ditt Google-konto utan att radera viktiga mejl eller bilder."
 author: "Aram Anwar"
-publishedAt: "2025-03-13"
+publishedAt: "2026-09-17T17:00:00+02:00"
 contentType: "guide"
 topics: ["webb", "guider"]
 tags: ["google", "gmail", "google-drive", "google-foto", "lagring"]
@@ -35,7 +35,7 @@ Mejl med tunga PDF-filer och videor är vanliga utrymmestjuvar.
 
 ## 3. Använd Google Lagringshanterare (Storage Manager)
 
-Google erbjuder ett inbyggd rensningsverktyg på [one.google.com/storage/management](https://one.google.com/storage/management). Verktyget hittar automatiskt:
+Google erbjuder ett inbyggt rensningsverktyg på [one.google.com/storage/management](https://one.google.com/storage/management). Verktyget hittar automatiskt:
 * Skräppost och slängda mejl.
 * Stora filer i Drive och Gmail.
 * Oskarpare bilder eller stora videoklipp i Google Foto.

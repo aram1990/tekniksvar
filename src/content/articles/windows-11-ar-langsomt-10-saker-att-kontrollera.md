@@ -48,7 +48,6 @@ Om din dator står i strömsparläge stryps processorhastigheten för att spara 
 
 Kör en fullständig genomsökning med det inbyggda **Windows-säkerhet** (Windows Defender). Det drar lite resurser och ger ett mycket gott skydd mot skadlig kod.
 
-## Relaterade guider
-* [Så frigör du diskutrymme i Windows 11 utan att radera fel filer](/artiklar/sa-frigor-du-diskutrymme-i-windows-11-utan-att-radera-fel-filer/)
-* [Så startar du Windows 11 i felsäkert läge](/artiklar/sa-startar-du-windows-11-i-felsakert-lage/)
-* [Windows Update fastnar – så löser du vanliga uppdateringsproblem](/artiklar/windows-update-fastnar-sa-loser-du-vanliga-uppdateringsproblem/)
+## 6. Uppdatera drivrutiner för grafikkort och chipset
+
+Föråldrade drivrutiner kan orsaka prestandaproblem i både operativsystemet och spel. Använd tillverkarens egna verktyg (Intel Driver & Support Assistant, AMD Software eller NVIDIA App) för att hålla systemet uppdaterat.

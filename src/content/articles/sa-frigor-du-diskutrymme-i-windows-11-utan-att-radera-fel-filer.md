@@ -2,7 +2,7 @@
 title: "Så frigör du diskutrymme i Windows 11 utan att radera fel filer"
 description: "Säker guide för att rensa hårddisken i Windows 11. Använd Lagringsassistenten, rensa tillfälliga uppdateringsfiler och undvik vanliga misstag."
 author: "Aram Anwar"
-publishedAt: "2025-02-27"
+publishedAt: "2026-09-17T15:50:00+02:00"
 contentType: "guide"
 topics: ["windows", "guider"]
 tags: ["windows-11", "diskutrymme", "rensa-datorn", "harddisk", "lagring"]

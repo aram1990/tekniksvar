@@ -2,7 +2,7 @@
 title: "Bluetooth fungerar inte på Android – vanliga orsaker och lösningar"
 description: "Felsökningsguide när Bluetooth fryser, tappar anslutningen eller vägrar parkoppla hörlurar på din Android-telefon."
 author: "Aram Anwar"
-publishedAt: "2025-03-05"
+publishedAt: "2026-09-17T16:20:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "bluetooth", "horlurar", "samsung", "felsokning"]

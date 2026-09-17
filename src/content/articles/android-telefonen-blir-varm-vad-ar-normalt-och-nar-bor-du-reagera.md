@@ -2,7 +2,7 @@
 title: "Android-telefonen blir varm – vad är normalt och när bör du reagera?"
 description: "Lär dig varför mobilen blir varm vid laddning, spel eller navigering. Se när det är helt ofarligt och när du bör agera av säkerhetsskäl."
 author: "Aram Anwar"
-publishedAt: "2025-03-11"
+publishedAt: "2026-09-17T16:50:00+02:00"
 contentType: "guide"
 topics: ["android", "guider"]
 tags: ["android", "varme", "batteri", "sakerhet", "snabbladdning"]
@@ -19,7 +19,7 @@ Det är helt naturligt att en Android-mobil blir ljummen under krävande uppgift
 
 Mobilen alstrar värme vid:
 * **Snabbladdning:** Särskilt under de första 0–50 procenten.
-* **Tunga spel och grafik:** När processorn och grafikcretsen körs på hög varvfrekvens.
+* **Tunga spel och grafik:** När processorn och grafikkretsen körs på hög varvfrekvens.
 * **GPS-navigering i bilen:** Särskilt om mobilen samtidigt sitter i en solbelyst mobilhållare i vindrutan.
 * **Systemuppdateringar:** När telefonen bearbetar och installerar stora filer.
 

@@ -2,7 +2,7 @@
 title: "Tvåfaktorsautentisering förklarad – så skyddar 2FA dina konton"
 description: "Lär dig hur tvåstegsverifiering (2FA/MFA) fungerar, skillnaden mellan SMS, autentiseringsappar och Nycklar (Passkeys) samt varför det förhindrar kapningar."
 author: "Aram Anwar"
-publishedAt: "2025-03-15"
+publishedAt: "2026-09-17T17:10:00+02:00"
 contentType: "explanation"
 topics: ["webb", "guider"]
 tags: ["2fa", "sakerhet", "mfa", "passkeys", "authenticator", "integritet"]
@@ -15,7 +15,7 @@ sources:
     url: "https://pages.nist.gov/800-63-3/"
 ---
 
-Att enbart förlita sig på ett lösenord för att skydda e-postkonton, sociala medier och banktjänster är idag en stor säkerhetsrisk. Om ditt lösenord läcker ut vid ett dataintrång hos en webbplats kan hackare enkelt ta över ditt konto. Det är här **tvåfaktorsautentisering (2FA)** kommer in.
+Att enbart förlita sig på ett lösenord för att skyddar e-postkonton, sociala medier och banktjänster är idag en stor säkerhetsrisk. Om ditt lösenord läcker ut vid ett dataintrång hos en webbplats kan hackare enkelt ta över ditt konto. Det är här **tvåfaktorsautentisering (2FA)** kommer in.
 
 ## Vad är tvåfaktorsautentisering (2FA)?
 

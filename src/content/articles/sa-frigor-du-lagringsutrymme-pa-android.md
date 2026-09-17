@@ -37,8 +37,3 @@ Appar som Spotify, TikTok, Instagram och Chrome sparar gigantiska mängder tillf
 ## 3. Flytta bilder och videor till molnet
 
 Videoklipp i 4K-upplösning tar enormt mycket plats. Använd tjänster som **Google Foto** för att säkerhetskopiera dina bilder i molnet och välj sedan funktionen **Frigör utrymme** för att radera de lokala kopiorna från telefonen.
-
-## Relaterade guider
-* [Google-kontot är fullt – så frigör du lagringsutrymme i Gmail, Drive och Foto](/artiklar/google-kontot-ar-fullt-sa-frigor-du-lagringsutrymme-i-gmail-drive-och-foto/)
-* [Android-telefonen blir varm – vad är normalt och när bör du reagera?](/artiklar/android-telefonen-blir-varm-vad-ar-normalt-och-nar-bor-du-reagera/)
-* [Så ser du vilka appar som drar mest batteri på Android](/artiklar/sa-ser-du-vilka-appar-som-drar-mest-batteri-pa-android/)

@@ -2,7 +2,7 @@
 title: "Mikrofonen fungerar inte i Windows 11 – 9 saker att kontrollera"
 description: "Felsök när mikrofonen vägrar ta upp ljud i Teams, Discord eller webbläsaren. Kontrollera sekretessinställningar, volym och drivrutiner."
 author: "Aram Anwar"
-publishedAt: "2025-02-17"
+publishedAt: "2026-09-17T15:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "mikrofon", "ljud", "teams", "discord"]

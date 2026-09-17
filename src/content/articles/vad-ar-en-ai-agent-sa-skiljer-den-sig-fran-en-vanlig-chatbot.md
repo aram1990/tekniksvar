@@ -2,14 +2,14 @@
 title: "Vad är en AI-agent? Så skiljer den sig från en vanlig chatbot"
 description: "Pedagogisk förklaring av AI-agenter. Lär dig hur agenter kan utföra flerstegsuppgifter, använda verktyg och vad som skiljer dem från vanliga chattbotar."
 author: "Aram Anwar"
-publishedAt: "2025-02-11"
+publishedAt: "2026-09-17T14:30:00+02:00"
 contentType: "explanation"
 topics: ["ai", "guider"]
 tags: ["ai-agent", "autonomi", "generativ-ai", "framtidens-teknik"]
 heroImage: "/images/vad-ar-en-ai-agent.svg"
 heroImageAlt: "Förklarande diagram över en autonom AI-agent som utför verktygsbaserade uppgifter"
 sources:
-  - name: "Anthropic — Building Effective Agents"
+  - name: "Anthropic — Building Effective Agents Research"
     url: "https://www.anthropic.com/research/building-effective-agents"
 ---
 

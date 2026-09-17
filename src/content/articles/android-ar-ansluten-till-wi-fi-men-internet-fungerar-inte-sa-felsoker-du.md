@@ -2,7 +2,7 @@
 title: "Android är ansluten till Wi-Fi men internet fungerar inte – så felsöker du"
 description: "Felsök när Android-mobilen visar 'Ansluten utan internet'. Steg för steg-lösningar för Samsung, Pixel och andra Android-telefoner."
 author: "Aram Anwar"
-publishedAt: "2025-03-03"
+publishedAt: "2026-09-17T16:10:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "wifi", "internet", "felsokning", "samsung", "pixel"]
@@ -13,7 +13,7 @@ sources:
     url: "https://support.google.com/android/answer/7680439"
 ---
 
-När din Android-mobil visar ikonen för Wi-Fi men kompletterar med meddelandet *"Ansluten, inget internet"* kan du varken surfa eller ta emot meddelanden. Menyer kan skilja sig något mellan Samsung, Google Pixel och Xiaomi.
+När din Android-mobil visar ikonen för Wi-Fi men kompletterar med meddelandet *"Ansluten, inget internet"* kan du varken surfa eller ta emot meddelanden. Menyer kan skilja sig något beroende på tillverkare (Samsung, Google Pixel, Xiaomi m.fl.).
 
 <div class="quick-fix-box">
   <h3>Snabb kontroll</h3>

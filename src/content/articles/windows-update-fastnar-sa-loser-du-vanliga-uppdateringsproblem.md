@@ -2,7 +2,7 @@
 title: "Windows Update fastnar – så löser du vanliga uppdateringsproblem"
 description: "Steg för steg-guide när uppdateringar i Windows 11 fastnar på 0 %, ger felkoder eller vägrar att slutföras."
 author: "Aram Anwar"
-publishedAt: "2025-02-19"
+publishedAt: "2026-09-17T15:10:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "windows-update", "felsokning", "uppdatering"]

@@ -1,8 +1,8 @@
 ---
 title: "Så skriver du bättre promptar i ChatGPT – 15 konkreta exempel"
-description: "Praktisk guide för att skriva tydligare instrukioner (promptar) till ChatGPT. Innehåller 15 färdiga exempel för arbete, studier och problemlösning."
+description: "Praktisk guide för att skriva tydligare instruktioner (promptar) till ChatGPT. Innehåller 15 färdiga exempel för arbete, studier och problemlösning."
 author: "Aram Anwar"
-publishedAt: "2025-02-05"
+publishedAt: "2026-09-17T14:00:00+02:00"
 contentType: "guide"
 topics: ["ai", "guider"]
 tags: ["chatgpt", "prompting", "openai", "ai-tips"]

@@ -2,7 +2,7 @@
 title: "Så skyddar du känslig information när du använder AI-tjänster"
 description: "Praktiska säkerhetstips när du använder ChatGPT, Claude eller Gemini. Lär dig hantera personuppgifter, sekretess och inställningar för dataträning."
 author: "Aram Anwar"
-publishedAt: "2025-02-13"
+publishedAt: "2026-09-17T14:40:00+02:00"
 contentType: "guide"
 topics: ["ai", "guider"]
 tags: ["ai-sakerhet", "integritet", "gdpr", "chatgpt", "dataskydd"]
@@ -29,7 +29,7 @@ När du klistrar in text eller laddar upp dokument i konsumentversioner av AI-tj
 ### 1. Stäng av modellträning i kontoinställningarna
 De flesta stora leverantörer låter dig stänga av att din chatt-historik används för att träna AI-modeller:
 * **ChatGPT:** Gå till *Inställningar > Datakontroller* och inaktivera *Förbättra modellen för alla*.
-* **Claude:** Gå till *Settings > Privacy* och granska inställningarna för datainamling.
+* **Claude:** Gå till *Settings > Privacy* och granska inställningarna för datainsamling.
 
 ### 2. Använd tillfälliga chattar (Temporary Chat)
 I ChatGPT kan du aktivera *Temporary Chat*. Då sparas inte konversationen i din historik och används inte för modellträning.

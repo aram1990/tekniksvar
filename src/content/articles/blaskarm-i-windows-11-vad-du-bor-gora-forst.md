@@ -2,7 +2,7 @@
 title: "Blåskärm i Windows 11 – vad du bör göra först"
 description: "Felsökningsguide för blåskärm (BSOD / Blue Screen of Death) i Windows 11. Identifiera stoppkoder, säkra dina filer och lös drivrutinsfel."
 author: "Aram Anwar"
-publishedAt: "2025-02-25"
+publishedAt: "2026-09-17T15:40:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "blaskarm", "bsod", "felsokning", "krasch"]

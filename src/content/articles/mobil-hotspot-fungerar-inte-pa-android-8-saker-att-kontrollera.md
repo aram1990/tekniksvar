@@ -2,7 +2,7 @@
 title: "Mobil hotspot fungerar inte på Android – 8 saker att kontrollera"
 description: "Felsök när du inte kan dela internet från din Android-mobil till datorn eller surfplattan. Inställningar för lösenord, frekvens och datasparare."
 author: "Aram Anwar"
-publishedAt: "2025-03-09"
+publishedAt: "2026-09-17T16:40:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "hotspot", "internetdelning", "felsokning", "wifi"]

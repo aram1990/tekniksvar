@@ -2,7 +2,7 @@
 title: "Inget ljud i Windows 11 – så felsöker du steg för steg"
 description: "Felsökningsguide när ljudet försvunnit i Windows 11. Kontrollera uppspelningsenheter, volymmixern, Bluetooth och drivrutiner."
 author: "Aram Anwar"
-publishedAt: "2025-02-15"
+publishedAt: "2026-09-17T14:50:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "ljud", "felsokning", "hogtalare", "drivrutiner"]

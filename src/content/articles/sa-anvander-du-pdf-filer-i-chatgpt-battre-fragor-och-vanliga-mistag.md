@@ -1,15 +1,15 @@
 ---
 title: "Så använder du PDF-filer i ChatGPT – bättre frågor och vanliga misstag"
-description: "Lär dig ladda upp och analysera PDF-dokument i ChatGPT. Få bättre sammanfattningar, extrahera data och undvik vanliga fällor med scannade filer."
+description: "Lär dig ladda upp och analysera PDF-dokument i ChatGPT. Få bättre sammanfattningar, extrahera data och undvik vanliga fällor med skannade filer."
 author: "Aram Anwar"
-publishedAt: "2025-02-09"
+publishedAt: "2026-09-17T14:20:00+02:00"
 contentType: "guide"
 topics: ["ai", "guider"]
 tags: ["chatgpt", "pdf", "dokument", "openai"]
 heroImage: "/images/sa-anvander-du-pdf-filer-i-chatgpt.svg"
 heroImageAlt: "Illustration av PDF-dokumentanalys i ChatGPT"
 sources:
-  - name: "OpenAI — Data Analysis & File Uploads"
+  - name: "OpenAI — Data Analysis & File Uploads Help"
     url: "https://help.openai.com/en/articles/8555545-file-uploads-in-chatgpt"
 ---
 
@@ -27,7 +27,7 @@ Möjligheten att ladda upp PDF-filer direkt i ChatGPT är en av de mest användb
 När filen är uppladdad är det viktigt att ställa precisa frågor:
 
 * **Sammanfattning:** *"Sammanfatta kapitel 3 i dokumentet i max 5 punkter. Fokusera på de ekonomiska slutsatserna."*
-* **Informationssökning:** *"Innehåller den här rapporten några siffror gällande energiförbrukningen under 2024? Ange vilket avsnitt du hittar informationen i."*
+* **Informationssökning:** *"Innehåller den här rapporten några siffror gällande energiförbrukningen under 2025? Ange vilket avsnitt du hittar informationen i."*
 * **Jämförelse:** *"Jämför avsnittet om avtalets giltighetstid med avsnittet om uppsägningsvillkor."*
 
 ## Vanliga begränsningar och fallgropar
