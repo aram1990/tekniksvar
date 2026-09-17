@@ -6,9 +6,11 @@ interface Props {
   topic: string;
   publishedAt: string;
   contentType: string;
+  heroImage?: string;
+  heroImageAlt?: string;
 }
 
-const { title, slug, description, topic, publishedAt, contentType } = Astro.props;
+const { title, slug, description, topic, publishedAt, contentType, heroImage, heroImageAlt } = Astro.props;
 
 const topicLabels: Record<string, string> = {
   ai: 'AI & AI-verktyg',
@@ -28,6 +30,17 @@ const typeLabels: Record<string, string> = {
 ---
 
 <article class="card">
+  {heroImage && (
+    <a href={`/artiklar/${slug}/`} style="display: block; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background-color: var(--color-navy);">
+      <img
+        src={heroImage}
+        alt={heroImageAlt || title}
+        loading="lazy"
+        decoding="async"
+        style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: var(--border-radius); border-top-right-radius: var(--border-radius);"
+      />
+    </a>
+  )}
   <div class="card-content">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
       <span class="card-topic">{topicLabels[topic] || topic}</span>
