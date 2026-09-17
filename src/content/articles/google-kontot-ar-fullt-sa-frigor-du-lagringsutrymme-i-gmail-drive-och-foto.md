@@ -2,7 +2,7 @@
 title: "Google-kontot är fullt – så frigör du lagringsutrymme i Gmail, Drive och Foto"
 description: "Säker guide för att rensa lagringsutrymme i ditt Google-konto utan att radera viktiga mejl eller bilder."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T17:00:00+02:00"
+publishedAt: "2026-09-17T12:55:00+02:00"
 contentType: "guide"
 topics: ["webb", "guider"]
 tags: ["google", "gmail", "google-drive", "google-foto", "lagring"]

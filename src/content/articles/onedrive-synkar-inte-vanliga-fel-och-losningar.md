@@ -2,7 +2,7 @@
 title: "OneDrive synkar inte – vanliga fel och lösningar"
 description: "Felsökningsguide när Microsoft OneDrive slutar synkronisera filer i Windows 11, visar röda utropstecken eller fastnar i 'Söker efter ändringar'."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T15:20:00+02:00"
+publishedAt: "2026-09-17T11:30:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["onedrive", "microsoft", "synkning", "windows-11", "molnlagring"]

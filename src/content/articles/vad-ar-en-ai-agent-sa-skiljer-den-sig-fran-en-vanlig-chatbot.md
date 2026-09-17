@@ -2,7 +2,7 @@
 title: "Vad är en AI-agent? Så skiljer den sig från en vanlig chatbot"
 description: "Pedagogisk förklaring av AI-agenter. Lär dig hur agenter kan utföra flerstegsuppgifter, använda verktyg och vad som skiljer dem från vanliga chattbotar."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T14:30:00+02:00"
+publishedAt: "2026-09-17T10:30:00+02:00"
 contentType: "explanation"
 topics: ["ai", "guider"]
 tags: ["ai-agent", "autonomi", "generativ-ai", "framtidens-teknik"]

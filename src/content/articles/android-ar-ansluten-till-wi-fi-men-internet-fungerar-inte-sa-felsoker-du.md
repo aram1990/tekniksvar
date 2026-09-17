@@ -2,7 +2,7 @@
 title: "Android är ansluten till Wi-Fi men internet fungerar inte – så felsöker du"
 description: "Felsök när Android-mobilen visar 'Ansluten utan internet'. Steg för steg-lösningar för Samsung, Pixel och andra Android-telefoner."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T16:10:00+02:00"
+publishedAt: "2026-09-17T12:20:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "wifi", "internet", "felsokning", "samsung", "pixel"]

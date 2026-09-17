@@ -2,7 +2,7 @@
 title: "Så använder du PDF-filer i ChatGPT – bättre frågor och vanliga misstag"
 description: "Lär dig ladda upp och analysera PDF-dokument i ChatGPT. Få bättre sammanfattningar, extrahera data och undvik vanliga fällor med skannade filer."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T14:20:00+02:00"
+publishedAt: "2026-09-17T10:20:00+02:00"
 contentType: "guide"
 topics: ["ai", "guider"]
 tags: ["chatgpt", "pdf", "dokument", "openai"]

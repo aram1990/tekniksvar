@@ -2,7 +2,7 @@
 title: "Android visar inga notiser – så får du aviseringarna att fungera igen"
 description: "Felsökningsguide när appnotiser och aviseringar för t.ex. BankID, WhatsApp eller e-post försvinner eller fördröjs i Android."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T16:30:00+02:00"
+publishedAt: "2026-09-17T12:40:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "notiser", "aviseringar", "samsung", "batterispar"]

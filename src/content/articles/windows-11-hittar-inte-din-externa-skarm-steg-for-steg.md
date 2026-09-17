@@ -2,7 +2,7 @@
 title: "Windows 11 hittar inte din externa skärm – steg för steg"
 description: "Felsök när den externa bildskärmen inte upptäcks i Windows 11. Kontrollera kablar, projiceringsläge, grafikdrivrutiner och dockningsstationer."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T16:00:00+02:00"
+publishedAt: "2026-09-17T12:10:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "skarm", "hdmi", "displayport", "felsokning"]

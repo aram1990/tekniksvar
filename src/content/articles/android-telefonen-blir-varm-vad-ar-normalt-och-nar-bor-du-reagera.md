@@ -2,7 +2,7 @@
 title: "Android-telefonen blir varm – vad är normalt och när bör du reagera?"
 description: "Lär dig varför mobilen blir varm vid laddning, spel eller navigering. Se när det är helt ofarligt och när du bör agera av säkerhetsskäl."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T16:50:00+02:00"
+publishedAt: "2026-09-17T12:50:00+02:00"
 contentType: "guide"
 topics: ["android", "guider"]
 tags: ["android", "varme", "batteri", "sakerhet", "snabbladdning"]

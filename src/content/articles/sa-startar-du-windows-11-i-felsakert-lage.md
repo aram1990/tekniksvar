@@ -2,7 +2,7 @@
 title: "Så startar du Windows 11 i felsäkert läge"
 description: "Steg för steg-guide till hur du startar Windows 11 i Felsäkert läge (Safe Mode) via inställningar, inloggningsskärmen eller återställningsmiljön."
 author: "Aram Anwar"
-publishedAt: "2026-09-17T15:30:00+02:00"
+publishedAt: "2026-09-17T11:40:00+02:00"
 contentType: "guide"
 topics: ["windows", "guider"]
 tags: ["windows-11", "felsakert-lage", "safe-mode", "felsokning"]
