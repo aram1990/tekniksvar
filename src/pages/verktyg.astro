@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [{ label: 'Gratis verktyg' }];
+
+const tools = [
+  {
+    title: 'Ordräknare',
+    slug: 'ordraknare',
+    description: 'Räkna ord, tecken (med/utan mellanslag), meningar, stycken och beräkna estimerad lästid för dina svenska texter.',
+    tag: 'Text & Script'
+  },
+  {
+    title: 'Bildformatskalkylator',
+    slug: 'bildformatskalkylator',
+    description: 'Beräkna aspect ratio (bildförhållande) och exakta pixeldimensioner för 16:9, 9:16, 4:3 och 1:1.',
+    tag: 'Bild & Video'
+  },
+  {
+    title: 'Unix-tidsstämpel',
+    slug: 'unix-tidsstampel',
+    description: 'Konvertera Unix Epoch timestamp till läsbart svenskt datum och tid samt UTC. Inkluderar realtidsklocka.',
+    tag: 'Kod & System'
+  },
+  {
+    title: 'JSON-validerare',
+    slug: 'json-validerare',
+    description: 'Kontrollera JSON-syntax, hitta fel på radnivå, indentera snyggt eller komprimera din kod direkt i webbläsaren.',
+    tag: 'Kod & Data'
+  }
+];
+---
+
+<BaseLayout
+  title="Gratis verktyg online – Tekniksvar"
+  description="Smarta och kostnadsfria webbverktyg som körs 100 % lokalt i din webbläsare utan registrering eller spårning."
+>
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">
+          Gratis verktyg online
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark); max-width: 700px;">
+          Användbara webbverktyg byggda för integritet. Ingen data lämnar din enhet, inga konton krävs och ingen spårning sker.
+        </p>
+      </header>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        {tools.map(tool => (
+          <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem; display: flex; flex-direction: column;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase; margin-bottom: 0.5rem;">{tool.tag}</div>
+            <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--color-navy); margin-bottom: 0.5rem;">
+              <a href={`/verktyg/${tool.slug}/`} style="color: inherit;">{tool.title}</a>
+            </h2>
+            <p style="font-size: 0.95rem; color: var(--color-gray-dark); margin-bottom: 1.5rem; flex-grow: 1;">
+              {tool.description}
+            </p>
+            <a href={`/verktyg/${tool.slug}/`} style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); text-align: center; padding: 0.6rem 1rem; border-radius: 4px; font-weight: 600; color: var(--color-navy); text-decoration: none;">
+              Öppna verktyget &rarr;
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

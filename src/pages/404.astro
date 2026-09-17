@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sidan kunde inte hittas (404) – Tekniksvar"
+  description="Tyvärr finns inte sidan du letar efter på Tekniksvar."
+  noindex={true}
+>
+  <div style="padding: 4rem 0 6rem 0; text-align: center;">
+    <div class="content-container">
+      <div style="font-size: 4rem; font-weight: 800; color: var(--color-accent); line-height: 1; margin-bottom: 1rem;">
+        404
+      </div>
+      <h1 style="font-size: 2rem; font-weight: 800; color: var(--color-navy); margin-bottom: 1rem;">
+        Sidan kunde inte hittas
+      </h1>
+      <p style="font-size: 1.1rem; color: var(--color-gray-dark); margin-bottom: 2rem;">
+        Länken du klickade på kan vara inaktuell eller så har adressen stavats fel.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+        <a href="/" style="background: var(--color-accent); color: var(--color-white); padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 700; text-decoration: none;">
+          Gå till startsidan
+        </a>
+        <a href="/sok/" style="background: var(--color-white); border: 1px solid var(--color-gray-border); color: var(--color-navy); padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+          Sök guider
+        </a>
+      </div>
+
+      <div style="text-align: left; background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem;">
+        <h2 style="font-size: 1.1rem; color: var(--color-navy); margin-bottom: 1rem;">Populära kategorier:</h2>
+        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; list-style: none;">
+          <li><a href="/windows/">Windows & Datorer</a></li>
+          <li><a href="/android/">Android & Mobil</a></li>
+          <li><a href="/ai/">AI & AI-verktyg</a></li>
+          <li><a href="/problem/">Felsökning</a></li>
+          <li><a href="/verktyg/">Gratis verktyg</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

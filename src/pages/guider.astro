@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+const sortedArticles = allArticles.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
+
+const breadcrumbs = [{ label: 'Alla guider' }];
+---
+
+<BaseLayout
+  title="Alla guider & artiklar – Tekniksvar"
+  description="Fullständigt bibliotek av svenska teknikguider, problemlösning och steg för steg-instruktioner."
+>
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">
+          Alla guider & artiklar
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark); max-width: 700px;">
+          Utforska alla våra publicerade guider, lösningar och förklaringar.
+        </p>
+      </header>
+
+      <div class="article-grid">
+        {sortedArticles.map((art) => (
+          <ArticleCard
+            title={art.data.title}
+            slug={art.slug}
+            description={art.data.description}
+            topic={art.data.topics[0] || 'guider'}
+            publishedAt={art.data.publishedAt}
+            contentType={art.data.contentType}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

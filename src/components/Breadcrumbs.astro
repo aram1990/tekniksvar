@@ -1,0 +1,21 @@
+---
+interface BreadcrumbsProps {
+  items: Array<{ label: string; href?: string }>;
+}
+
+const { items } = Astro.props as BreadcrumbsProps;
+---
+
+<nav aria-label="Brödsmulor" class="breadcrumbs">
+  <a href="/">Hem</a>
+  {items.map((item) => (
+    <>
+      <span class="separator">/</span>
+      {item.href ? (
+        <a href={item.href}>{item.label}</a>
+      ) : (
+        <span aria-current="page">{item.label}</span>
+      )}
+    </>
+  ))}
+</nav>

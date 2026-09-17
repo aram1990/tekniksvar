@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const breadcrumbs = [{ label: 'Sök' }];
+---
+
+<BaseLayout
+  title="Sök – Tekniksvar"
+  description="Sök bland alla guider, felsökningsartiklar och verktyg på Tekniksvar."
+  noindex={true}
+>
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="content-container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">
+          Sök på Tekniksvar
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark);">
+          Sök efter ditt teknikproblem, operativsystem eller programvara.
+        </p>
+      </header>
+
+      <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+      <script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+      <div id="search-container" style="margin-bottom: 3rem;"></div>
+
+      <script is:inline>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          if (typeof PagefindUI !== 'undefined') {
+            new PagefindUI({
+              element: "#search-container",
+              showSubResults: true,
+              translations: {
+                placeholder: "Sök guider, AI, Windows, Android...",
+                clear_search: "Rensa",
+                load_more: "Ladda fler resultat",
+                search_label: "Sök på sajten",
+                zero_results: "Inga resultat hittades för \"[SEARCH_TERM]\"",
+                many_results: "[COUNT] resultat hittades för \"[SEARCH_TERM]\"",
+                one_result: "1 resultat hittades för \"[SEARCH_TERM]\""
+              }
+            });
+          }
+        });
+      </script>
+    </div>
+  </div>
+</BaseLayout>

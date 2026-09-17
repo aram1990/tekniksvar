@@ -1,0 +1,141 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl = new URL(Astro.url.pathname, Astro.site).href,
+  image = 'https://tekniksvar.com/images/og-default.png',
+  type = 'website',
+  noindex = false,
+} = Astro.props;
+
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | Tekniksvar</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  {noindex && <meta name="robots" content="noindex, follow" />}
+  {!noindex && <meta name="robots" content="index, follow, max-image-preview:large" />}
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:image" content={image} />
+  <meta property="og:site_name" content="Tekniksvar" />
+  <meta property="og:locale" content="sv_SE" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
+
+  <!-- Favicon & RSS -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="Tekniksvar RSS Feed" href="/rss.xml" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Hoppa till innehållet</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+          <rect width="44" height="44" rx="10" fill="#0F172A"/>
+          <path d="M14 12H30V18H25V32H19V18H14V12Z" fill="#2563EB"/>
+          <circle cx="28" cy="28" r="3.5" fill="#38BDF8"/>
+        </svg>
+        <span>Teknik<span style="color: var(--color-accent);">svar</span></span>
+      </a>
+
+      <nav aria-label="Huvudmeny">
+        <ul class="nav-links">
+          <li><a href="/guider/">Guider</a></li>
+          <li><a href="/problem/">Problem</a></li>
+          <li><a href="/ai/">AI</a></li>
+          <li><a href="/windows/">Windows</a></li>
+          <li><a href="/android/">Android</a></li>
+          <li><a href="/jamforelser/">Jämförelser</a></li>
+          <li><a href="/verktyg/">Verktyg</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/sok/" class="search-btn" aria-label="Sök på Tekniksvar">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Sök</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Tekniksvar</h2>
+          <p>Teknik förklarad. Problem lösta. Vi publicerar praktiska guider, opartiska jämförelser och kostnadsfria verktyg för datorer, mobiler och AI.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Kategorier</h3>
+          <ul>
+            <li><a href="/guider/">Alla guider</a></li>
+            <li><a href="/problem/">Felsökning</a></li>
+            <li><a href="/ai/">AI & AI-verktyg</a></li>
+            <li><a href="/windows/">Windows & Datorer</a></li>
+            <li><a href="/android/">Android & Mobil</a></li>
+            <li><a href="/jamforelser/">Jämförelser</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Verktyg</h3>
+          <ul>
+            <li><a href="/verktyg/ordraknare/">Ordräknare</a></li>
+            <li><a href="/verktyg/bildformatskalkylator/">Bildformatskalkylator</a></li>
+            <li><a href="/verktyg/unix-tidsstampel/">Unix-tidsstämpel</a></li>
+            <li><a href="/verktyg/json-validerare/">JSON-validerare</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Om & Policy</h3>
+          <ul>
+            <li><a href="/om/">Om Tekniksvar</a></li>
+            <li><a href="/forfattare/">Författare</a></li>
+            <li><a href="/redaktionell-policy/">Redaktionell policy</a></li>
+            <li><a href="/affiliate-policy/">Affiliate-policy</a></li>
+            <li><a href="/integritet/">Integritetspolicy</a></li>
+            <li><a href="/cookies/">Cookiepolicy</a></li>
+            <li><a href="/villkor/">Användarvillkor</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {new Date().getFullYear()} Tekniksvar (tekniksvar.com). Alla rättigheter förbehållna.</p>
+        <p>Innehållet skrivs och granskas på svenska för svensk publik.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Affiliate-policy' }];
+---
+
+<PageLayout
+  title="Affiliate-policy & Transparens"
+  description="Information om hur Tekniksvar finansieras och vår policy gällande kommersiella länkar och sammarbeten."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    För att kunna driva Tekniksvar som en kostnadsfri publikation för alla läsare kan sajtens innehåll i framtiden innehålla kommersiella partnerlänkar (så kallade affiliate-länkar).
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Hur affiliate-länkar fungerar</h2>
+  <p style="margin-bottom: 1rem;">
+    Om du klickar på en kvalificerad affiliate-länk till en återförsäljare eller tjänst och genomför ett köp kan Tekniksvar erhålla en liten ersättning från företaget i fråga. Detta påverkar aldrig det pris du betalar för produkten.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Oberoende och integritet</h2>
+  <p style="margin-bottom: 1rem;">
+    Våra redaktionella bedömningar och guider kan inte köpas. Ett eventuellt affiliate-samarbete påverkar aldrig vilka produkter eller programvara vi rekommenderar, eller hur vi utvärderar lösningar på ett problem. Läsarens förtroende är sajtens viktigaste tillgång.
+  </p>
+</PageLayout>

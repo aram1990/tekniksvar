@@ -1,0 +1,25 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Copyright & Upphovsrätt' }];
+---
+
+<PageLayout
+  title="Copyright & Upphovsrätt"
+  description="Information om upphovsrätt och rättigheter för innehållet på Tekniksvar.se."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    Allt innehåll på Tekniksvar (tekniksvar.com) – inklusive text, struktur, grafik, logotyper och kod – skyddas av upphovsrättslagen om inget annat anges.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Återpublicering och citering</h2>
+  <p style="margin-bottom: 1rem;">
+    Korta citat ur våra artiklar är tillåtna förutsatt att du anger <strong>Tekniksvar</strong> som källa och tillhandahåller en aktiv, klickbar länk tillbaka till originalartikeln på tekniksvar.com. Helautomatisk kopiering, scraping eller återpublicering av hela guider utan tillstånd är inte tillåtet.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Varumärken</h2>
+  <p style="margin-bottom: 1rem;">
+    Produktnamn, logotyper och varumärken som nämns i våra guider (t.ex. Windows, Android, ChatGPT, Claude) tillhör sina respektive ägare och används endast i beskrivande syfte.
+  </p>
+</PageLayout>

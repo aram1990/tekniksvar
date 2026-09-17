@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const androidArticles = await getCollection('articles', ({ data }) => !data.draft && data.topics.includes('android'));
+const sorted = androidArticles.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
+
+const breadcrumbs = [{ label: 'Android & Mobil' }];
+---
+
+<BaseLayout
+  title="Android & Mobil – Guider för Samsung, Pixel & Android"
+  description="Lär dig frigöra minne, spara batteri och felsöka appar som kraschar på din Android-mobil."
+>
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">
+          Android & Mobil
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark); max-width: 700px;">
+          Optimera din smartphone, stoppa strömtjuvar och åtgärda laddnings- och app-problem.
+        </p>
+      </header>
+
+      <div class="article-grid">
+        {sorted.map((art) => (
+          <ArticleCard
+            title={art.data.title}
+            slug={art.slug}
+            description={art.data.description}
+            topic="android"
+            publishedAt={art.data.publishedAt}
+            contentType={art.data.contentType}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,18 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+
+const breadcrumbs = [{ label: 'Författare' }];
+---
+
+<PageLayout
+  title="Författare & Redaktion – Tekniksvar"
+  description="Möt skribenterna och redaktörerna bakom Tekniksvar."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; color: var(--color-gray-dark); margin-bottom: 2rem;">
+    På Tekniksvar skrivs och granskas allt innehåll av kunniga redaktörer med fokus på fakta, användarnytta och tydlighet.
+  </p>
+
+  <AuthorBox />
+</PageLayout>

@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  description: string;
+  topic: string;
+  publishedAt: string;
+  contentType: string;
+}
+
+const { title, slug, description, topic, publishedAt, contentType } = Astro.props;
+
+const topicLabels: Record<string, string> = {
+  ai: 'AI & AI-verktyg',
+  windows: 'Windows & Datorer',
+  android: 'Android & Mobil',
+  guider: 'Guider',
+  problem: 'Felsökning',
+  jamforelser: 'Jämförelse',
+};
+
+const typeLabels: Record<string, string> = {
+  guide: 'Guide',
+  fix: 'Felsökning',
+  explanation: 'Förklaring',
+  comparison: 'Jämförelse',
+};
+---
+
+<article class="card">
+  <div class="card-content">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+      <span class="card-topic">{topicLabels[topic] || topic}</span>
+      <span style="font-size: 0.75rem; background: var(--color-gray-bg); padding: 0.15rem 0.5rem; border-radius: 4px; color: var(--color-gray-dark);">{typeLabels[contentType] || contentType}</span>
+    </div>
+    <h3 class="card-title">
+      <a href={`/artiklar/${slug}/`}>{title}</a>
+    </h3>
+    <p class="card-desc">{description}</p>
+    <div class="card-meta">
+      <time datetime={publishedAt}>{new Date(publishedAt).toLocaleDateString('sv-SE', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+      <span>•</span>
+      <span>Aram Anwar</span>
+    </div>
+  </div>
+</article>

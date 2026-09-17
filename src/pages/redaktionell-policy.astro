@@ -1,0 +1,35 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Redaktionell policy' }];
+---
+
+<PageLayout
+  title="Redaktionell policy"
+  description="Läs om Tekniksvars redaktionella riktlinjer, principer för källkritik, rättelser och transparens."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    Tekniksvar eftersträvar högsta möjliga trovärdighet, saklighet och oberoende. Våra läsare ska kunna lita på att instruktioner och rekommendationer är korrekt verifierade.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">1. Läsarens nytta i första hand</h2>
+  <p style="margin-bottom: 1rem;">
+    Allt innehåll på Tekniksvar produceras för att hjälpa användaren. Vi publicerar inte artiklar enbart för att uppnå nyckelordsmål eller generera klick utan att erbjuda ett genuint och användbart svar.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">2. Källkritik och verifiering</h2>
+  <p style="margin-bottom: 1rem;">
+    Vi prioriterar alltid primärkällor såsom officiell dokumentation från Microsoft, Google, Apple, OpenAI och Anthropic. Där påståenden görs om funktioner eller begränsningar refererar vi till gällande tekniska specifikationer.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">3. Inga fabricerade tester eller erfarenheter</h2>
+  <p style="margin-bottom: 1rem;">
+    Vi påstår aldrig att ett hårdvarutest eller fälttest har genomförts om det inte faktiskt ägt rum. Vi hittar inte på testresultat, prestandasiffror eller artificiella betyg.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">4. Rättelser och transparens</h2>
+  <p style="margin-bottom: 1rem;">
+    Teknik förändras snabbt. Om en artikel innehåller inaktuella uppgifter eller felaktigheter korrigerar vi detta skyndsamt. Betydande uppdateringar märks ut med ett uppdateringsdatum i artikeln.
+  </p>
+</PageLayout>

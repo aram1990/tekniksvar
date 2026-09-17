@@ -1,0 +1,25 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Användarvillkor' }];
+---
+
+<PageLayout
+  title="Användarvillkor"
+  description="Användarvillkor för nyttjande av innehåll och verktyg på Tekniksvar.se."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    Genom att besöka och använda Tekniksvar (tekniksvar.com) godkänner du följande användarvillkor.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">1. Ansvarsfriskrivning för tekniska instruktioner</h2>
+  <p style="margin-bottom: 1rem;">
+    Alla guider, instruktioner och felsökningssteg publiceras i god tro i syfte att hjälpa användaren. Tekniksvar kan dock inte hållas ansvarigt för eventuell dataförlust, hårdvaruskador eller andra indirekta skador som uppstår till följd av att instruktioner följts. Säkerhetskopiera alltid dina viktiga filer innan du utför avancerade systemändringar.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">2. Användning av gratis verktyg</h2>
+  <p style="margin-bottom: 1rem;">
+    Våra kostnadsfria verktyg tillhandahålls i befintligt skick utan några garantier för oavbruten funktion eller exakthet för kommersiella ändamål.
+  </p>
+</PageLayout>

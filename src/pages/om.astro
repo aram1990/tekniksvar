@@ -1,0 +1,33 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Om Tekniksvar' }];
+---
+
+<PageLayout
+  title="Om Tekniksvar"
+  description="Tekniksvar är en oberoende svensk teknikpublikation som hjälper vanliga användare att lösa problem med datorer, mobiler och AI."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    <strong>Tekniksvar</strong> (tekniksvar.com) skapades med ett tydligt uppdrag: att förklara teknik enkelt och lösa vanliga vardagsproblem för svenska användare.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Vårt uppdrag (Mission)</h2>
+  <p style="margin-bottom: 1rem;">
+    Det digitala samhället ställer allt högre krav på att vi ska förstå och hantera operativsystem, appar, nätverk och ny AI-teknik. Tekniksvar publicerar steg för steg-guider, opartiska jämförelser och kostnadsfria webbverktyg som gör tekniken tillgänglig för alla.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Vad vi INTE är</h2>
+  <ul style="padding-left: 1.25rem; margin-bottom: 1.5rem; line-height: 1.7;">
+    <li>En generisk AI-innehållsfabrik som massproducerar lågkvalitativ text.</li>
+    <li>En klickfiske-sajt för snabba tekniknyheter utan praktiskt värde.</li>
+    <li>En kopia av andra svenska tekniktidningar.</li>
+    <li>En samling tunna SEO-landningssidor utan riktiga svar.</li>
+  </ul>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">Redaktionellt ansvar</h2>
+  <p style="margin-bottom: 1rem;">
+    Grundare och redaktör för Tekniksvar är <strong>Aram Anwar</strong>. Allt material verifieras mot officiell dokumentation från tillverkare och leverantörer innan publicering.
+  </p>
+</PageLayout>

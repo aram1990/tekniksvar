@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+const sortedArticles = allArticles.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
+
+const featuredArticles = sortedArticles.slice(0, 6);
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Tekniksvar",
+  "url": "https://tekniksvar.com",
+  "description": "Teknik förklarad. Problem lösta. Praktiska guider, problemlösning och kostnadsfria verktyg på svenska.",
+  "inLanguage": "sv-SE"
+};
+---
+
+<BaseLayout
+  title="Tekniksvar – Praktiska guider, problemlösning & gratis verktyg"
+  description="Svensk teknikpublikation med fokus på praktiska lösningar för Windows, Android, AI och webbtjänster. Helt fritt från krångliga fackterm."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+  <!-- Hero Section -->
+  <section style="background: linear-gradient(180deg, var(--color-white) 0%, var(--color-gray-bg) 100%); border-bottom: 1px solid var(--color-gray-border); padding: 3.5rem 0 4rem 0;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span style="background: var(--color-accent-light); color: var(--color-accent); font-size: 0.85rem; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 20px; display: inline-block; margin-bottom: 1.25rem;">
+        Svensk teknikguider & problemlösning
+      </span>
+      <h1 style="font-size: 2.75rem; font-weight: 800; color: var(--color-navy); line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.02em;">
+        Teknik behöver inte vara krångligt.
+      </h1>
+      <p style="font-size: 1.2rem; color: var(--color-gray-dark); line-height: 1.6; margin-bottom: 2rem;">
+        Praktiska guider, tydliga svar och smarta verktyg för dator, mobil, AI och digitala tjänster. Fritt från reklamfällor och fackjargon.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/sok/" style="background: var(--color-accent); color: var(--color-white); padding: 0.85rem 1.75rem; border-radius: 6px; font-weight: 700; text-decoration: none; box-shadow: var(--shadow-sm);">
+          Hitta ditt svar (Sök)
+        </a>
+        <a href="/guider/" style="background: var(--color-white); color: var(--color-slate); border: 1px solid var(--color-gray-border); padding: 0.85rem 1.75rem; border-radius: 6px; font-weight: 600; text-decoration: none;">
+          Utforska guider
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Hub Cards -->
+  <section style="padding: 3rem 0; background: var(--color-white); border-bottom: 1px solid var(--color-gray-border);">
+    <div class="container">
+      <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--color-navy); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        Vad behöver du hjälp med?
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+        <a href="/windows/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">Windows & Dator</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Prestanda, Wi-Fi, Bluetooth, fel</div>
+        </a>
+
+        <a href="/android/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">Android & Mobil</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Batteri, lagring, appar som kraschar</div>
+        </a>
+
+        <a href="/ai/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">AI & Verktyg</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">ChatGPT, Claude, promptyips</div>
+        </a>
+
+        <a href="/problem/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">Felsökning</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Steg för steg-lösningar</div>
+        </a>
+
+        <a href="/jamforelser/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">Jämförelser</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Opartiska jämförelser</div>
+        </a>
+
+        <a href="/verktyg/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-accent); font-size: 1.1rem; margin-bottom: 0.25rem;">Gratis verktyg</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Ordräknare, JSON & fler</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Launch Articles -->
+  <section style="padding: 3.5rem 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
+        <div>
+          <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--color-navy);">Senaste guiderna och artiklarna</h2>
+          <p style="color: var(--color-gray-dark); font-size: 0.95rem;">Aktuella och granskade lösningar för dina teknikfrågor.</p>
+        </div>
+        <a href="/guider/" style="font-weight: 600; font-size: 0.95rem;">Visa alla artiklar &rarr;</a>
+      </div>
+
+      <div class="article-grid">
+        {featuredArticles.map((art) => (
+          <ArticleCard
+            title={art.data.title}
+            slug={art.slug}
+            description={art.data.description}
+            topic={art.data.topics[0] || 'guider'}
+            publishedAt={art.data.publishedAt}
+            contentType={art.data.contentType}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Browser Tools Showcase Strip -->
+  <section style="background: var(--color-navy); color: var(--color-white); padding: 3.5rem 0;">
+    <div class="container">
+      <div style="max-width: 600px; margin-bottom: 2rem;">
+        <span style="color: #38bdf8; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Kostnadsfria verktyg</span>
+        <h2 style="font-size: 2rem; font-weight: 800; margin-top: 0.25rem; margin-bottom: 0.5rem;">Smarta webbverktyg som skyddar din integritet</h2>
+        <p style="color: #94a3b8; font-size: 1rem;">Alla verktyg körs 100 % lokalt i din webbläsare. Inga konton, inga avgifter och ingen datainsamling.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+        <a href="/verktyg/ordraknare/" style="background: #1e293b; padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: var(--color-white); border: 1px solid #334155;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: #38bdf8;">Ordräknare</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">Räkna ord, tecken, meningar och beräkna lästid.</p>
+        </a>
+
+        <a href="/verktyg/bildformatskalkylator/" style="background: #1e293b; padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: var(--color-white); border: 1px solid #334155;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: #38bdf8;">Bildformatskalkylator</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">Beräkna aspect ratio och nya pixeldimensioner.</p>
+        </a>
+
+        <a href="/verktyg/unix-tidsstampel/" style="background: #1e293b; padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: var(--color-white); border: 1px solid #334155;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: #38bdf8;">Unix-tidsstämpel</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">Konvertera mellan epoch timestamp och svenskt datum.</p>
+        </a>
+
+        <a href="/verktyg/json-validerare/" style="background: #1e293b; padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: var(--color-white); border: 1px solid #334155;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: #38bdf8;">JSON-validerare</h3>
+          <p style="font-size: 0.85rem; color: #94a3b8;">Validera syntax, formattera och komprimera JSON.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section style="padding: 3rem 0; background: var(--color-white); border-top: 1px solid var(--color-gray-border);">
+    <div class="container" style="text-align: center; max-width: 760px;">
+      <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--color-navy); margin-bottom: 0.75rem;">Varför lita på Tekniksvar?</h2>
+      <p style="color: var(--color-gray-dark); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1.5rem;">
+        Vi bygger en oberoende svensk teknikpublikation grundad på fakta, officiell dokumentation och praktisk nytta. Alla lösningar verifieras mot officiella källor från tillverkare som Microsoft, Google och OpenAI.
+      </p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 0.85rem; color: var(--color-gray-muted);">
+        <span>✓ Svenskt innehåll</span>
+        <span>✓ Inga hittepå-tester</span>
+        <span>✓ Tydlig källhänvisning</span>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

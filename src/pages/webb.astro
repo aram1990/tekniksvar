@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const appArticles = await getCollection('articles', ({ data }) => !data.draft && (data.topics.includes('appar') || data.topics.includes('webb')));
+const sorted = appArticles.sort((a, b) => new Date(b.data.publishedAt).getTime() - new Date(a.data.publishedAt).getTime());
+
+const breadcrumbs = [{ label: 'Appar & Webb' }];
+---
+
+<BaseLayout
+  title="Appar & Webb – Tekniksvar"
+  description="Guider, problemlösning och tips för populära mobilappar, programvara och digitala onlinetjänster."
+>
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.5rem;">
+          Appar & Webb
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark); max-width: 700px;">
+          Tips, felsökning och guider för de mest använda apparna och webbtjänsterna.
+        </p>
+      </header>
+
+      <div class="article-grid">
+        {sorted.map((art) => (
+          <ArticleCard
+            title={art.data.title}
+            slug={art.slug}
+            description={art.data.description}
+            topic={art.data.topics[0] || 'appar'}
+            publishedAt={art.data.publishedAt}
+            contentType={art.data.contentType}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
