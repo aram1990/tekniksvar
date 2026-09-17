@@ -43,6 +43,8 @@ ChatGPT är ett mångsidigt verktyg som kan underlätta vardag och arbete:
 * **Sekretess och känslig data:** Klistra aldrig in känsliga personuppgifter, lösenord eller sekretessbelagd företagsinformation i chatten.
 * **Avsaknad av mänskligt förnuft:** ChatGPT "tänker" inte på riktigt – den förutspår text baserat på statistiska mönster.
 
-## Sammanfattning
-
-ChatGPT är ett effektivt verktyg för att spara tid och få hjälp med text och problemlösning. Genom att förstå hur verktyget fungerar och granska svaren kritiskt kan du få stor nytta av det i din vardag.
+## Relaterade guider
+* [Så skriver du bättre promptar i ChatGPT – 15 konkreta exempel](/artiklar/sa-skriver-du-battre-promptar-i-chatgpt-15-konkreta-exempel/)
+* [ChatGPT vs Gemini – vad är skillnaden och när passar de bäst?](/artiklar/chatgpt-vs-gemini-vad-ar-skillnaden-och-nar-passar-de-bast/)
+* [Så använder du PDF-filer i ChatGPT](/artiklar/sa-anvander-du-pdf-filer-i-chatgpt-battre-fragor-och-vanliga-mistag/)
+* [Så skyddar du känslig information när du använder AI-tjänster](/artiklar/sa-skyddar-du-kanslig-information-nar-du-anvander-ai-tjanster/)

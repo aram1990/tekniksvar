@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0F172A"/>
+  <rect x="80" y="100" width="300" height="250" rx="12" fill="#1E293B" stroke="#2563EB" stroke-width="2"/>
+  <text x="120" y="160" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">ChatGPT</text>
+  <text x="120" y="190" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8">OpenAI GPT-4o</text>
+  <rect x="420" y="100" width="300" height="250" rx="12" fill="#1E293B" stroke="#0284C7" stroke-width="2"/>
+  <text x="460" y="160" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">Gemini</text>
+  <text x="460" y="190" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8">Google Gemini 1.5</text>
+  <path d="M390 220L410 220" stroke="#38BDF8" stroke-width="4" stroke-linecap="round"/>
+</svg>
