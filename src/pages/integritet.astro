@@ -1,0 +1,30 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const breadcrumbs = [{ label: 'Integritetspolicy' }];
+---
+
+<PageLayout
+  title="Integritetspolicy"
+  description="Integritetspolicy för Tekniksvar.se. Läs om hur vi skyddar dina personuppgifter och din personliga integritet."
+  breadcrumbs={breadcrumbs}
+>
+  <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+    Tekniksvar värnar om din personliga integritet. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar personuppgifter i enlighet med dataskyddsförordningen (GDPR).
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">1. Datainsamling</h2>
+  <p style="margin-bottom: 1rem;">
+    Vid vanliga besök på Tekniksvar samlar vi inte in några personidentifierbara uppgifter. Våra onlineverktyg (`/verktyg/`) exekveras helt lokalt i din webbläsare. Inga texter, filer eller sökningar som du klistrar in i verktygen skickas till våra servrar.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">2. Kontaktformulär</h2>
+  <p style="margin-bottom: 1rem;">
+    Om du väljer att kontakta oss via vårt kontaktformulär sparar vi det namn och den e-postadress du uppger för att kunna besvara din förfrågan. Uppgifterna lämnas aldrig ut till tredje part.
+  </p>
+
+  <h2 style="font-size: 1.35rem; color: var(--color-navy); margin: 2rem 0 0.75rem 0;">3. Dina rättigheter enligt GDPR</h2>
+  <p style="margin-bottom: 1rem;">
+    Du har rätt att kostnadsfritt begära information om vilka personuppgifter vi eventuellt har sparade om dig, samt begära radering eller korrigering av dessa.
+  </p>
+</PageLayout>

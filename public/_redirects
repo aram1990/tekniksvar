@@ -1,0 +1,2 @@
+# Cloudflare Pages Redirects
+https://www.tekniksvar.com/* https://tekniksvar.com/:splat 301

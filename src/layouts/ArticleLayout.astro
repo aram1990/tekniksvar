@@ -1,0 +1,113 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  publishedAt: string;
+  updatedAt?: string;
+  author: string;
+  topic: string;
+  contentType: string;
+  sources?: Array<{ name: string; url: string }>;
+  slug: string;
+}
+
+const { title, description, publishedAt, updatedAt, author, topic, contentType, sources, slug } = Astro.props;
+
+const topicNames: Record<string, string> = {
+  ai: 'AI',
+  windows: 'Windows',
+  android: 'Android',
+  guider: 'Guider',
+  problem: 'Problem',
+  jamforelser: 'Jämförelser',
+};
+
+const topicPath = topicNames[topic] ? `/${topic}/` : '/guider/';
+
+const breadcrumbs = [
+  { label: topicNames[topic] || 'Guider', href: topicPath },
+  { label: title }
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": contentType === 'fix' ? "TechArticle" : "Article",
+  "headline": title,
+  "description": description,
+  "inLanguage": "sv-SE",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://tekniksvar.com/artiklar/${slug}/`
+  },
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": "https://tekniksvar.com/forfattare/aram-anwar/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tekniksvar",
+    "url": "https://tekniksvar.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tekniksvar.com/images/logo.svg"
+    }
+  },
+  "datePublished": publishedAt,
+  "dateModified": updatedAt || publishedAt
+};
+---
+
+<BaseLayout title={title} description={description} type="article">
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article style="padding: 2.5rem 0 4rem 0;">
+    <div class="content-container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2rem; border-bottom: 1px solid var(--color-gray-border); padding-bottom: 1.5rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); line-height: 1.25; margin-bottom: 1rem;">
+          {title}
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--color-gray-dark); line-height: 1.5; margin-bottom: 1.25rem;">
+          {description}
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: 0.875rem; color: var(--color-gray-muted);">
+          <span>Skriven av <a href="/forfattare/aram-anwar/" style="color: var(--color-navy); font-weight: 600;">{author}</a></span>
+          <span>•</span>
+          <span>Publicerad: <time datetime={publishedAt}>{new Date(publishedAt).toLocaleDateString('sv-SE', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+          {updatedAt && (
+            <>
+              <span>•</span>
+              <span>Uppdaterad: <time datetime={updatedAt}>{new Date(updatedAt).toLocaleDateString('sv-SE', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+            </>
+          )}
+        </div>
+      </header>
+
+      <div class="article-body" style="font-size: 1.05rem; line-height: 1.7; color: var(--color-slate);">
+        <slot />
+      </div>
+
+      {sources && sources.length > 0 && (
+        <section style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-gray-border);">
+          <h2 style="font-size: 1.1rem; color: var(--color-navy); margin-bottom: 0.75rem;">Källor och referenser</h2>
+          <ul style="padding-left: 1.25rem; font-size: 0.9rem; color: var(--color-gray-dark);">
+            {sources.map(src => (
+              <li style="margin-bottom: 0.35rem;">
+                <a href={src.url} target="_blank" rel="noopener noreferrer">{src.name}</a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <AuthorBox />
+    </div>
+  </article>
+</BaseLayout>

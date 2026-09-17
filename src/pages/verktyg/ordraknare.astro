@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Verktyg', href: '/verktyg/' },
+  { label: 'Ordräknare' }
+];
+
+const toolSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ordräknare — Tekniksvar",
+  "url": "https://tekniksvar.com/verktyg/ordraknare/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "inLanguage": "sv-SE",
+  "description": "Gratis online ordräknare. Räkna ord, tecken, meningar och beräkna lästid direkt i webbläsaren utan registrering."
+};
+---
+
+<BaseLayout
+  title="Ordräknare – Räkna ord, tecken och meningar online"
+  description="Gratis och integritetsvänlig ordräknare. Räkna ord, tecken (med/utan mellanslag), meningar, stycken och estimerad lästid direkt i webbläsaren."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
+
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="content-container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.75rem;">
+          Ordräknare
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark);">
+          Klistra in eller skriv din text nedan för att direkt få exakt statistik över antal ord, tecken, meningar och estimerad lästid.
+        </p>
+      </header>
+
+      <!-- Tool UI -->
+      <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem; box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-bottom: 1.25rem;">
+          <div style="background: var(--color-gray-bg); padding: 1rem; border-radius: 6px; text-align: center;">
+            <div style="font-size: 0.75rem; color: var(--color-gray-muted); text-transform: uppercase; font-weight: 700;">Ord</div>
+            <div id="word-count" style="font-size: 1.75rem; font-weight: 800; color: var(--color-navy);">0</div>
+          </div>
+
+          <div style="background: var(--color-gray-bg); padding: 1rem; border-radius: 6px; text-align: center;">
+            <div style="font-size: 0.75rem; color: var(--color-gray-muted); text-transform: uppercase; font-weight: 700;">Tecken</div>
+            <div id="char-count" style="font-size: 1.75rem; font-weight: 800; color: var(--color-navy);">0</div>
+          </div>
+
+          <div style="background: var(--color-gray-bg); padding: 1rem; border-radius: 6px; text-align: center;">
+            <div style="font-size: 0.75rem; color: var(--color-gray-muted); text-transform: uppercase; font-weight: 700;">Tecken (u. m.)</div>
+            <div id="char-nospace-count" style="font-size: 1.75rem; font-weight: 800; color: var(--color-navy);">0</div>
+          </div>
+
+          <div style="background: var(--color-gray-bg); padding: 1rem; border-radius: 6px; text-align: center;">
+            <div style="font-size: 0.75rem; color: var(--color-gray-muted); text-transform: uppercase; font-weight: 700;">Meningar</div>
+            <div id="sentence-count" style="font-size: 1.75rem; font-weight: 800; color: var(--color-navy);">0</div>
+          </div>
+
+          <div style="background: var(--color-gray-bg); padding: 1rem; border-radius: 6px; text-align: center;">
+            <div style="font-size: 0.75rem; color: var(--color-gray-muted); text-transform: uppercase; font-weight: 700;">Lästid</div>
+            <div id="read-time" style="font-size: 1.25rem; font-weight: 800; color: var(--color-accent); padding-top: 0.35rem;">0 min</div>
+          </div>
+        </div>
+
+        <textarea
+          id="text-input"
+          placeholder="Skriv eller klistra in din text här..."
+          rows="10"
+          style="width: 100%; padding: 1rem; border: 1px solid var(--color-gray-border); border-radius: 6px; font-family: var(--font-sans); font-size: 1rem; line-height: 1.5; resize: vertical; box-sizing: border-box;"
+        ></textarea>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+          <button id="clear-btn" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer; color: var(--color-slate);">
+            Rensa text
+          </button>
+          <span style="font-size: 0.85rem; color: var(--color-gray-muted);">🔒 Texten behandlas helt lokalt i din webbläsare.</span>
+        </div>
+      </div>
+
+      <!-- Explanatory Guide -->
+      <section style="line-height: 1.7; color: var(--color-slate);">
+        <h2 style="font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">Hur fungerar ordräknaren?</h2>
+        <p style="margin-bottom: 1rem;">
+          Tekniksvars ordräknare analyserar din text i realtid direkt på din enhet. Inga ord eller dokument skickas vidare till någon extern server, vilket gör verktyget helt säkert för känsliga dokument och manus.
+        </p>
+
+        <h3 style="font-size: 1.2rem; color: var(--color-navy); margin: 1.5rem 0 0.5rem 0;">Beräkning av lästid</h3>
+        <p style="margin-bottom: 1rem;">
+          Estimering av lästid baseras på ett genomsnittligt lästempo på <strong>200 ord per minut</strong> för svenska vuxna läsare. Detta ger en god uppskattning för artiklar, blogginlägg och e-postmeddelanden.
+        </p>
+
+        <h3 style="font-size: 1.2rem; color: var(--color-navy); margin: 1.5rem 0 0.5rem 0;">Vanliga användningsområden</h3>
+        <ul style="padding-left: 1.25rem; margin-bottom: 1rem;">
+          <li>**Skolarbeten och uppsatser:** Håll koll på att du uppfyller kraven för minsta/mesta antal ord.</li>
+          <li>**Sociala medier:** Anpassa inlägg för teckengränser på X/Twitter (280 tecken), Meta och LinkedIn.</li>
+          <li>**SEO och artiklar:** Kontrollera längd på metabeskrivningar (ca 150 tecken) och artikeltexter.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const input = document.getElementById('text-input') as HTMLTextAreaElement;
+    const wordCountEl = document.getElementById('word-count')!;
+    const charCountEl = document.getElementById('char-count')!;
+    const charNoSpaceEl = document.getElementById('char-nospace-count')!;
+    const sentenceCountEl = document.getElementById('sentence-count')!;
+    const readTimeEl = document.getElementById('read-time')!;
+    const clearBtn = document.getElementById('clear-btn')!;
+
+    function analyzeText() {
+      const text = input.value;
+
+      // Tecken
+      const chars = text.length;
+      const charsNoSpace = text.replace(/\s/g, '').length;
+
+      // Ord
+      const trimmed = text.trim();
+      const words = trimmed === '' ? 0 : trimmed.split(/\s+/).length;
+
+      // Meningar
+      const sentences = trimmed === '' ? 0 : (text.match(/[^.!?]+[.!?]+/g) || []).length || (words > 0 ? 1 : 0);
+
+      // Lästid (200 ord/min)
+      const minutes = Math.ceil(words / 200);
+
+      wordCountEl.textContent = words.toLocaleString('sv-SE');
+      charCountEl.textContent = chars.toLocaleString('sv-SE');
+      charNoSpaceEl.textContent = charsNoSpace.toLocaleString('sv-SE');
+      sentenceCountEl.textContent = sentences.toLocaleString('sv-SE');
+      readTimeEl.textContent = words === 0 ? '0 min' : `${minutes} min`;
+    }
+
+    input?.addEventListener('input', analyzeText);
+    clearBtn?.addEventListener('click', () => {
+      input.value = '';
+      analyzeText();
+    });
+  </script>
+</BaseLayout>

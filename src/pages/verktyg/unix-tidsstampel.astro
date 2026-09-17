@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Verktyg', href: '/verktyg/' },
+  { label: 'Unix-tidsstämpel' }
+];
+
+const toolSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Unix-tidsstämpelkonverterare — Tekniksvar",
+  "url": "https://tekniksvar.com/verktyg/unix-tidsstampel/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "inLanguage": "sv-SE",
+  "description": "Konvertera Unix timestamp till vanligt datum och tid (och tvärtom). Inkluderar realtidsklocka i sekunder och millisekunder."
+};
+---
+
+<BaseLayout
+  title="Unix-tidsstämpelkonverterare – Epoch till datum & tid"
+  description="Konvertera Unix timestamp (epoch time) till läsbart datum och tid i svensk tidszon. Gratis onlineverktyg för utvecklare och systemadministratörer."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
+
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="content-container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.75rem;">
+          Unix-tidsstämpelkonverterare
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark);">
+          Konvertera mellan Unix Epoch timestamp (sekunder/millisekunder) och läsbart datum i lokal svensk tid samt UTC.
+        </p>
+      </header>
+
+      <!-- Live Clock Banner -->
+      <div style="background: var(--color-navy); color: var(--color-white); border-radius: var(--border-radius); padding: 1.25rem 1.5rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; font-weight: 700; display: block;">Aktuell Unix Timestamp (sekunder)</span>
+          <span id="current-epoch" style="font-size: 2rem; font-weight: 800; font-family: var(--font-mono); color: #38bdf8;">0</span>
+        </div>
+        <button id="copy-current" style="background: var(--color-accent); color: var(--color-white); border: 0; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer;">
+          Kopiera nuvarande
+        </button>
+      </div>
+
+      <!-- Tool UI -->
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2.5rem;">
+
+        <!-- Convert Timestamp to Date -->
+        <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h2 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 1rem;">1. Timestamp → Läsbart datum</h2>
+          <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+            <input type="number" id="input-timestamp" placeholder="t.ex. 1735689600" style="flex-grow: 1; padding: 0.6rem; border: 1px solid var(--color-gray-border); border-radius: 4px; font-family: var(--font-mono); font-size: 1.05rem;" />
+            <button id="btn-ts-to-date" style="background: var(--color-accent); color: var(--color-white); border: 0; padding: 0.6rem 1.25rem; border-radius: 4px; font-weight: 600; cursor: pointer;">Konvertera</button>
+          </div>
+
+          <div id="ts-result" style="display: none; background: var(--color-gray-bg); padding: 1rem; border-radius: 4px; font-size: 0.95rem;">
+            <div style="margin-bottom: 0.35rem;"><strong>Lokal tid (Sverige):</strong> <span id="res-local" style="font-family: var(--font-mono);"></span></div>
+            <div style="margin-bottom: 0.35rem;"><strong>UTC-tid:</strong> <span id="res-utc" style="font-family: var(--font-mono);"></span></div>
+            <div><strong>ISO 8601:</strong> <span id="res-iso" style="font-family: var(--font-mono);"></span></div>
+          </div>
+        </div>
+
+        <!-- Convert Date to Timestamp -->
+        <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h2 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 1rem;">2. Datum & Tid → Timestamp</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
+            <input type="datetime-local" id="input-date" style="padding: 0.6rem; border: 1px solid var(--color-gray-border); border-radius: 4px; font-size: 1rem;" />
+            <button id="btn-date-to-ts" style="background: var(--color-accent); color: var(--color-white); border: 0; padding: 0.6rem 1.25rem; border-radius: 4px; font-weight: 600; cursor: pointer;">Skapa Timestamp</button>
+          </div>
+
+          <div id="date-result" style="display: none; background: var(--color-gray-bg); padding: 1rem; border-radius: 4px; font-size: 0.95rem;">
+            <div style="margin-bottom: 0.35rem;"><strong>Unix Timestamp (sekunder):</strong> <span id="res-sec" style="font-family: var(--font-mono); font-weight: 700; color: var(--color-navy);"></span></div>
+            <div><strong>Unix Timestamp (millisekunder):</strong> <span id="res-ms" style="font-family: var(--font-mono);"></span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Explanatory Guide -->
+      <section style="line-height: 1.7; color: var(--color-slate);">
+        <h2 style="font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">Vad är en Unix-tidsstämpel (Epoch time)?</h2>
+        <p style="margin-bottom: 1rem;">
+          En Unix-tidsstämpel representerar antalet sekunder som har förflutit sedan <strong>1 januari 1970 kl 00:00:00 UTC</strong> (kallat Unix-epoken). Systemet används universellt i operativsystem, databaser och API-tjänster eftersom det är helt oberoende av tidszoner.
+        </p>
+
+        <h3 style="font-size: 1.2rem; color: var(--color-navy); margin: 1.5rem 0 0.5rem 0;">Sekunder vs Millisekunder</h3>
+        <p style="margin-bottom: 1rem;">
+          Standardiseringen inom Unix använder sekunder (10 siffror idag, t.ex. 1700000000). Många programmeringsspråk (som JavaScript och Java) arbetar istället med millisekunder (13 siffror). Verktyget känner automatiskt av om du matat in sekunder eller millisekunder.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const currentEpochEl = document.getElementById('current-epoch')!;
+    const copyCurrentBtn = document.getElementById('copy-current')!;
+
+    function updateLiveClock() {
+      const now = Math.floor(Date.now() / 1000);
+      currentEpochEl.textContent = now.toString();
+    }
+    setInterval(updateLiveClock, 1000);
+    updateLiveClock();
+
+    copyCurrentBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(currentEpochEl.textContent || '');
+      copyCurrentBtn.textContent = 'Kopierat!';
+      setTimeout(() => { copyCurrentBtn.textContent = 'Kopiera nuvarande'; }, 2000);
+    });
+
+    // TS -> Date
+    const inputTs = document.getElementById('input-timestamp') as HTMLInputElement;
+    const btnTs = document.getElementById('btn-ts-to-date')!;
+    const tsResultBox = document.getElementById('ts-result')!;
+
+    btnTs.addEventListener('click', () => {
+      let val = parseInt(inputTs.value.trim(), 10);
+      if (isNaN(val)) return;
+
+      // Om mindre än 100 miljarder, anta sekunder. Annars ms.
+      if (val < 100000000000) {
+        val = val * 1000;
+      }
+
+      const d = new Date(val);
+      document.getElementById('res-local')!.textContent = d.toLocaleString('sv-SE');
+      document.getElementById('res-utc')!.textContent = d.toUTCString();
+      document.getElementById('res-iso')!.textContent = d.toISOString();
+      tsResultBox.style.display = 'block';
+    });
+
+    // Date -> TS
+    const inputDate = document.getElementById('input-date') as HTMLInputElement;
+    const btnDate = document.getElementById('btn-date-to-ts')!;
+    const dateResultBox = document.getElementById('date-result')!;
+
+    btnDate.addEventListener('click', () => {
+      if (!inputDate.value) return;
+      const d = new Date(inputDate.value);
+      const ms = d.getTime();
+      const sec = Math.floor(ms / 1000);
+
+      document.getElementById('res-sec')!.textContent = sec.toString();
+      document.getElementById('res-ms')!.textContent = ms.toString();
+      dateResultBox.style.display = 'block';
+    });
+  </script>
+</BaseLayout>

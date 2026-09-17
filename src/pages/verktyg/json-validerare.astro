@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { label: 'Verktyg', href: '/verktyg/' },
+  { label: 'JSON-validerare' }
+];
+
+const toolSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "JSON-validerare och formatterare — Tekniksvar",
+  "url": "https://tekniksvar.com/verktyg/json-validerare/",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "inLanguage": "sv-SE",
+  "description": "Gratis klientbaserad JSON-validerare. Kontrollera syntax, snygga till (format/indentera) eller komprimera (minify) din JSON direkt i webbläsaren."
+};
+---
+
+<BaseLayout
+  title="JSON-validerare & Formatterare – Kontrollera och snygga till JSON"
+  description="Validate, format och komprimera JSON-kod direkt i din webbläsare. Hitta syntaxfel med exakta radhänvisningar. Säkert och integritetsvänligt utan uppladdning."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
+
+  <div style="padding: 2.5rem 0 4rem 0;">
+    <div class="content-container">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <header style="margin-bottom: 2rem;">
+        <h1 style="font-size: 2.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.75rem;">
+          JSON-validerare & Formatterare
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--color-gray-dark);">
+          Validera din JSON-kod, hitta syntaxfel och formattera om texten med ren indentering. Allt körs lokalt i din webbläsare.
+        </p>
+      </header>
+
+      <!-- Tool UI -->
+      <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.5rem; box-shadow: var(--shadow-sm); margin-bottom: 2.5rem;">
+
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem; flex-wrap: wrap;">
+          <button id="btn-format" style="background: var(--color-accent); color: var(--color-white); border: 0; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer;">
+            Snygga till (Format)
+          </button>
+          <button id="btn-minify" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer; color: var(--color-slate);">
+            Komprimera (Minify)
+          </button>
+          <button id="btn-sample" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer; color: var(--color-slate);">
+            Ladda exempel
+          </button>
+          <button id="btn-clear" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; cursor: pointer; color: var(--color-slate); margin-left: auto;">
+            Rensa
+          </button>
+        </div>
+
+        <div id="status-message" style="display: none; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 600;"></div>
+
+        <textarea
+          id="json-input"
+          placeholder="Klistra in din JSON-kod här..."
+          rows="12"
+          style="width: 100%; padding: 1rem; border: 1px solid var(--color-gray-border); border-radius: 6px; font-family: var(--font-mono); font-size: 0.9rem; line-height: 1.5; resize: vertical; box-sizing: border-box;"
+        ></textarea>
+
+        <div style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-gray-muted);">
+          🔒 Din JSON överförs aldrig över nätverket. Valideringen sker 100 % lokalt via JavaScript i din webbläsare.
+        </div>
+      </div>
+
+      <!-- Explanatory Guide -->
+      <section style="line-height: 1.7; color: var(--color-slate);">
+        <h2 style="font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">Vad är JSON?</h2>
+        <p style="margin-bottom: 1rem;">
+          JSON (JavaScript Object Notation) är ett lättviktigt och textbaserat format för att strukturera och utbyta data mellan server och webbläsare.
+        </p>
+
+        <h3 style="font-size: 1.2rem; color: var(--color-navy); margin: 1.5rem 0 0.5rem 0;">Vanliga syntaxfel i JSON</h3>
+        <ul style="padding-left: 1.25rem; margin-bottom: 1rem;">
+          <li>**Eftersläpande kommatecken (Trailing commas):** Till skillnad från JavaScript tillåter inte ren JSON kommatecken efter sista elementet i en lista eller ett objekt.</li>
+          <li>**Enkla citationstecken:** Alla nycklar och strängvärden i JSON måste omslutas av dubbla citationstecken (<code>"nyckel": "värde"</code>).</li>
+          <li>**Saknade klamrar eller hakparenteser:** Varje <code>{`{`}</code> måste stängas med <code>{`}`}</code> och varje <code>[</code> med <code>]</code>.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const input = document.getElementById('json-input') as HTMLTextAreaElement;
+    const btnFormat = document.getElementById('btn-format')!;
+    const btnMinify = document.getElementById('btn-minify')!;
+    const btnSample = document.getElementById('btn-sample')!;
+    const btnClear = document.getElementById('btn-clear')!;
+    const statusMsg = document.getElementById('status-message')!;
+
+    function showStatus(text: string, isSuccess: boolean) {
+      statusMsg.style.display = 'block';
+      statusMsg.textContent = text;
+      if (isSuccess) {
+        statusMsg.style.backgroundColor = '#ecfdf5';
+        statusMsg.style.color = '#065f46';
+        statusMsg.style.border = '1px solid #a7f3d0';
+      } else {
+        statusMsg.style.backgroundColor = '#fef2f2';
+        statusMsg.style.color = '#991b1b';
+        statusMsg.style.border = '1px solid #fecaca';
+      }
+    }
+
+    btnFormat.addEventListener('click', () => {
+      const val = input.value.trim();
+      if (!val) return;
+      try {
+        const parsed = JSON.parse(val);
+        input.value = JSON.stringify(parsed, null, 2);
+        showStatus('Giltig JSON! Koden har formatterats.', true);
+      } catch (err: any) {
+        showStatus(`Ogiltig JSON: ${err.message}`, false);
+      }
+    });
+
+    btnMinify.addEventListener('click', () => {
+      const val = input.value.trim();
+      if (!val) return;
+      try {
+        const parsed = JSON.parse(val);
+        input.value = JSON.stringify(parsed);
+        showStatus('Giltig JSON! Koden har komprimerats.', true);
+      } catch (err: any) {
+        showStatus(`Ogiltig JSON: ${err.message}`, false);
+      }
+    });
+
+    btnSample.addEventListener('click', () => {
+      const sample = {
+        webbplats: "Tekniksvar",
+        doman: "tekniksvar.com",
+        kategorier: ["AI", "Windows", "Android", "Verktyg"],
+        aktiv: true,
+        statistik: { artiklar: 12, verktyg: 4 }
+      };
+      input.value = JSON.stringify(sample, null, 2);
+      showStatus('Giltig exempel-JSON inläst.', true);
+    });
+
+    btnClear.addEventListener('click', () => {
+      input.value = '';
+      statusMsg.style.display = 'none';
+    });
+  </script>
+</BaseLayout>
