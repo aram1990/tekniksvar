@@ -4,9 +4,33 @@ interface BreadcrumbsProps {
 }
 
 const { items } = Astro.props as BreadcrumbsProps;
+
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Hem",
+      "item": "https://tekniksvar.com/"
+    },
+    ...items.map((item, index) => {
+      const href = item.href ? item.href : Astro.url.pathname;
+      const fullUrl = href.startsWith('http') ? href : `https://tekniksvar.com${href.startsWith('/') ? href : '/' + href}`;
+      return {
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": item.label,
+        "item": fullUrl
+      };
+    })
+  ]
+};
 ---
 
 <nav aria-label="Brödsmulor" class="breadcrumbs">
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbListSchema)} />
   <a href="/">Hem</a>
   {items.map((item) => (
     <>

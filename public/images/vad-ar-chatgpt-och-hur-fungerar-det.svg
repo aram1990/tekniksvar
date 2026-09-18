@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0F172A"/>
+  <!-- Background Grid -->
+  <path d="M0 75H800M0 150H800M0 225H800M0 300H800M0 375H800" stroke="#1E293B" stroke-width="1"/>
+  <path d="M133 0V450M266 0V450M400 0V450M533 0V450M666 0V450" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Central AI Diagram -->
+  <rect x="220" y="100" width="360" height="250" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Prompt Input Node -->
+  <rect x="250" y="140" width="300" height="40" rx="8" fill="#0F172A" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="270" y="165" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">Prompt: "Förklara begreppet..."</text>
+
+  <!-- Processing Neural Lines -->
+  <path d="M300 180V220M400 180V220M500 180V220" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- LLM Processing Node -->
+  <rect x="250" y="220" width="300" height="50" rx="8" fill="#2563EB"/>
+  <text x="400" y="250" font-family="system-ui, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700" text-anchor="middle">Språkmodell (LLM)</text>
+
+  <!-- Output Node -->
+  <path d="M400 270V290" stroke="#38BDF8" stroke-width="2"/>
+  <rect x="250" y="290" width="300" height="40" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+  <text x="270" y="315" font-family="system-ui, sans-serif" font-size="14" fill="#34D399" font-weight="600">Genererat svar på svenska</text>
+
+  <!-- Decorative AI Sparkles -->
+  <circle cx="150" cy="180" r="25" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <path d="M150 168V192M138 180H162" stroke="#38BDF8" stroke-width="2"/>
+
+  <circle cx="650" cy="270" r="25" fill="#1E293B" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="650" cy="270" r="8" fill="#38BDF8"/>
+</svg>

@@ -10,17 +10,27 @@ const featuredArticles = sortedArticles.slice(0, 6);
 
 const websiteSchema = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Tekniksvar",
-  "url": "https://tekniksvar.com",
-  "description": "Teknik förklarad. Problem lösta. Praktiska guider, problemlösning och kostnadsfria verktyg på svenska.",
-  "inLanguage": "sv-SE"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Tekniksvar",
+      "url": "https://tekniksvar.com",
+      "description": "Teknik förklarad. Problem lösta. Praktiska guider, problemlösning och kostnadsfria verktyg på svenska.",
+      "inLanguage": "sv-SE"
+    },
+    {
+      "@type": "Organization",
+      "name": "Tekniksvar",
+      "url": "https://tekniksvar.com",
+      "logo": "https://tekniksvar.com/favicon-192x192.png"
+    }
+  ]
 };
 ---
 
 <BaseLayout
   title="Tekniksvar – Praktiska guider, problemlösning & gratis verktyg"
-  description="Svensk teknikpublikation med fokus på praktiska lösningar för Windows, Android, AI och webbtjänster. Helt fritt från krångliga fackterm."
+  description="Svensk teknikpublikation med fokus på praktiska lösningar för Windows, Android, AI och webbtjänster. Helt fritt från krångliga facktermer."
 >
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 
@@ -28,7 +38,7 @@ const websiteSchema = {
   <section style="background: linear-gradient(180deg, var(--color-white) 0%, var(--color-gray-bg) 100%); border-bottom: 1px solid var(--color-gray-border); padding: 3.5rem 0 4rem 0;">
     <div class="container" style="text-align: center; max-width: 800px;">
       <span style="background: var(--color-accent-light); color: var(--color-accent); font-size: 0.85rem; font-weight: 700; padding: 0.35rem 0.85rem; border-radius: 20px; display: inline-block; margin-bottom: 1.25rem;">
-        Svensk teknikguider & problemlösning
+        Svenska teknikguider & problemlösning
       </span>
       <h1 style="font-size: 2.75rem; font-weight: 800; color: var(--color-navy); line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.02em;">
         Teknik behöver inte vara krångligt.
@@ -66,9 +76,14 @@ const websiteSchema = {
           <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Batteri, lagring, appar som kraschar</div>
         </a>
 
+        <a href="/appar/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
+          <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">Appar & Webb</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">Program, tjänster och appar</div>
+        </a>
+
         <a href="/ai/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">
           <div style="font-weight: 700; color: var(--color-navy); font-size: 1.1rem; margin-bottom: 0.25rem;">AI & Verktyg</div>
-          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">ChatGPT, Claude, promptyips</div>
+          <div style="font-size: 0.85rem; color: var(--color-gray-muted);">ChatGPT, Claude, prompttips</div>
         </a>
 
         <a href="/problem/" style="background: var(--color-gray-bg); border: 1px solid var(--color-gray-border); padding: 1.25rem; border-radius: var(--border-radius); text-decoration: none; color: inherit; transition: all 0.2s;">

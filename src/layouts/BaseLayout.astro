@@ -17,6 +17,8 @@ const {
   noindex = false,
 } = Astro.props;
 
+const displayTitle = title.includes('Tekniksvar') ? title : `${title} | Tekniksvar`;
+
 import '../styles/global.css';
 ---
 
@@ -25,7 +27,7 @@ import '../styles/global.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} | Tekniksvar</title>
+  <title>{displayTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalUrl} />
 
@@ -69,13 +71,14 @@ import '../styles/global.css';
         <span>Teknik<span style="color: var(--color-accent);">svar</span></span>
       </a>
 
-      <nav aria-label="Huvudmeny">
+      <nav aria-label="Huvudmeny" class="desktop-nav">
         <ul class="nav-links">
           <li><a href="/guider/">Guider</a></li>
           <li><a href="/problem/">Problem</a></li>
           <li><a href="/ai/">AI</a></li>
           <li><a href="/windows/">Windows</a></li>
           <li><a href="/android/">Android</a></li>
+          <li><a href="/appar/">Appar & Webb</a></li>
           <li><a href="/jamforelser/">Jämförelser</a></li>
           <li><a href="/verktyg/">Verktyg</a></li>
         </ul>
@@ -86,6 +89,25 @@ import '../styles/global.css';
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           <span>Sök</span>
         </a>
+
+        <details class="mobile-menu">
+          <summary class="mobile-menu-btn" aria-label="Öppna huvudmeny">
+            <svg class="icon-open" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="icon-close" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+          </summary>
+          <div class="mobile-dropdown">
+            <ul class="mobile-nav-links">
+              <li><a href="/guider/">Guider</a></li>
+              <li><a href="/problem/">Problem & Felsökning</a></li>
+              <li><a href="/ai/">AI & AI-verktyg</a></li>
+              <li><a href="/windows/">Windows & Datorer</a></li>
+              <li><a href="/android/">Android & Mobil</a></li>
+              <li><a href="/appar/">Appar & Webb</a></li>
+              <li><a href="/jamforelser/">Jämförelser</a></li>
+              <li><a href="/verktyg/">Alla verktyg</a></li>
+            </ul>
+          </div>
+        </details>
       </div>
     </div>
   </header>
@@ -109,6 +131,7 @@ import '../styles/global.css';
             <li><a href="/ai/">AI & AI-verktyg</a></li>
             <li><a href="/windows/">Windows & Datorer</a></li>
             <li><a href="/android/">Android & Mobil</a></li>
+            <li><a href="/appar/">Appar & Webb</a></li>
             <li><a href="/jamforelser/">Jämförelser</a></li>
           </ul>
         </div>

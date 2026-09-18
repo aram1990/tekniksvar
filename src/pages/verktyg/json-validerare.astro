@@ -21,7 +21,7 @@ const toolSchema = {
 
 <BaseLayout
   title="JSON-validerare & Formatterare – Kontrollera och snygga till JSON"
-  description="Validate, format och komprimera JSON-kod direkt i din webbläsare. Hitta syntaxfel med exakta radhänvisningar. Säkert och integritetsvänligt utan uppladdning."
+  description="Validera, formatera och komprimera JSON-kod direkt i din webbläsare. Hitta syntaxfel med exakta radhänvisningar. Säkert och integritetsvänligt utan uppladdning."
 >
   <script type="application/ld+json" set:html={JSON.stringify(toolSchema)} />
 
@@ -137,9 +137,9 @@ const toolSchema = {
       const sample = {
         webbplats: "Tekniksvar",
         doman: "tekniksvar.com",
-        kategorier: ["AI", "Windows", "Android", "Verktyg"],
+        kategorier: ["AI", "Windows", "Android", "Appar & Webb", "Verktyg"],
         aktiv: true,
-        statistik: { artiklar: 12, verktyg: 4 }
+        statistik: { artiklar: 32, verktyg: 4 }
       };
       input.value = JSON.stringify(sample, null, 2);
       showStatus('Giltig exempel-JSON inläst.', true);
