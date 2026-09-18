@@ -1,58 +1,75 @@
 ---
 title: "Gratis vs betald ChatGPT – vad får du egentligen?"
-description: "Jämförelse mellan ChatGPT Gratis och ChatGPT Plus. Se vad som skiljer kontotyperna gällande modellåtkomst, användningsgränser och verktyg."
+description: "Jämförelse mellan ChatGPT Gratis och ChatGPT Plus. Se vad som skiljer kontotyperna gällande modeller, användningsgränser och verktyg."
 author: "Aram Anwar"
 publishedAt: "2026-09-17"
+updatedAt: "2026-09-18"
 contentType: "comparison"
 topics: ["ai", "jamforelser"]
 heroImage: "/images/gratis-vs-betald-chatgpt.svg"
 heroImageAlt: "Gratis kontra betald ChatGPT"
 tags: ["chatgpt", "chatgpt-plus", "openai", "prenumeration"]
 sources:
-  - name: "OpenAI — ChatGPT Pricing & Plans"
-    url: "https://openai.com/chatgpt/pricing"
-  - name: "OpenAI Help Center — ChatGPT Subscriptions"
+  - name: "OpenAI Help Center — ChatGPT Free Tier FAQ"
+    url: "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+  - name: "OpenAI Help Center — What is ChatGPT Plus?"
     url: "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus"
+  - name: "OpenAI Help Center — GPT-5.6 in ChatGPT"
+    url: "https://help.openai.com/en/articles/20001354-gpt-5-6"
 ---
 
-Många funderar över vad som faktiskt skiljer ett kostnadsfritt ChatGPT-konto från ett **ChatGPT Plus**-abonnemang. Här går vi igenom grundläggande funktioner, modellåtkomst och verktyg hos de två kontoalternativen baserat på officiell dokumentation från OpenAI.
+Skillnaden mellan **ChatGPT Gratis** och **ChatGPT Plus** handlar framför allt om modellåtkomst, användningsgränser och prioritet till funktioner. OpenAI ändrar modeller och gränser löpande, så exakta alternativ i modellväljaren kan förändras även efter att den här artikeln har uppdaterats.
 
-Om du vill lära dig mer om hur tjänsten fungerar i grunden kan du läsa vår introduktion [vad är ChatGPT och hur fungerar det](/artiklar/vad-ar-chatgpt-och-hur-fungerar-det/).
+Om du först vill förstå hur tjänsten fungerar kan du läsa vår introduktion [vad är ChatGPT och hur fungerar det](/artiklar/vad-ar-chatgpt-och-hur-fungerar-det/).
 
-## Vad ingår i den kostnadsfria versionen?
+## Vad ingår i ChatGPT Gratis?
 
-Den kostnadsfria versionen av ChatGPT ger alla registrerade användare tillgång till OpenAI:s grundläggande konversationsmodell samt ett urval av avancerade funktioner:
+Enligt OpenAI har gratisnivån i september 2026 tillgång till **GPT-5.6 Luna** som standardmodell. Gratisanvändare kan dessutom använda flera verktyg, men med lägre eller separata användningsgränser.
 
-* **Grundläggande modellåtkomst:** Tillgång till OpenAI:s standardmodell för textskrivande, översättning, korrekturlesning och problemlösning.
-* **Dynamiska användningsgränser:** Gratisanvändare får tillgång till avancerad modellkapacitet med variabla gränser som anpassas automatiskt efter aktuell belastning på OpenAI:s servrar.
-* **Webbsökning:** Möjlighet att låta AI:n hämta aktuell information direkt från internet.
-* **Filanalys & Databearbetning:** Möjlighet att ladda upp dokument, bildfiler och kalkylark för analys. För tips om dokumenthantering, se vår guide om [hur du använder PDF-filer i ChatGPT](/artiklar/sa-anvander-du-pdf-filer-i-chatgpt-battre-fragor-och-vanliga-mistag/).
+Det omfattar bland annat:
 
-## Vad ingår i ChatGPT Plus?
+* **GPT-5.6 Luna:** Standardmodellen för Free och Go.
+* **Think:** Ett alternativ för mer krävande frågor, med tillgänglighet som kan skilja sig mellan plattformar.
+* **Webbsökning:** ChatGPT kan hämta aktuell information från webben.
+* **Fil- och bildhantering:** Du kan ladda upp filer och bilder och be ChatGPT analysera dem.
+* **Dataanalys:** Gratisnivån har tillgång till dataanalys med separata begränsningar.
+* **Bildskapande:** Bildgenerering finns även på gratisnivån, men med lägre användningsgränser.
+* **GPT:er:** Gratisanvändare kan upptäcka och använda befintliga GPT:er.
 
-Ett abonnemang på **ChatGPT Plus** (som kostar 20 USD per månad) är utformat för användare som behöver högre kapacitet, prioriterad tillgång och utökade verktyg:
+Om du arbetar mycket med dokument kan du läsa vår guide om [hur du använder PDF-filer i ChatGPT](/artiklar/sa-anvander-du-pdf-filer-i-chatgpt-battre-fragor-och-vanliga-mistag/).
 
-1. **Bredare modellåtkomst:** Tillgång till OpenAI:s mest avancerade resonemangs- och multimodala modeller.
-2. **Högre användningsgränser:** Betydligt fler meddelanden per tidsfönster innan systemet begränsar åtkomsten.
-3. **Avancerad dataanalys & Kodexekvering:** Möjlighet att köra Python-kod i en isolerad miljö för avancerad databearbetning.
-4. **Multimodala verktyg:** Tillgång till bildgenerering, avancerat röstläge för naturtrogna röstsamtal samt synanalys.
-5. **Anpassade GPT-assistenter:** Möjlighet att bygga, konfigurera och dela skräddarsydda AI-assistenter.
-6. **Prioriterad tillgänglighet:** Snabbare svarstider och garanterad åtkomst även under perioder med hög belastning på tjänsten.
+## Vad får du med ChatGPT Plus?
+
+**ChatGPT Plus kostar 20 USD per månad** enligt OpenAI. Plus ger bredare modellåtkomst, högre gränser och prioriterad åtkomst när tjänsten är hårt belastad.
+
+I september 2026 ingår bland annat:
+
+1. **Bredare modellåtkomst:** Plus har tillgång till GPT-5.6 Sol med Medium och High reasoning, utöver andra alternativ som kan visas i modellväljaren.
+2. **Högre användningsgränser:** Plus tillåter fler meddelanden och högre gränser för flera verktyg än gratisnivån.
+3. **Avancerat resonemang:** Plus ger tillgång till fler resonemangsalternativ för exempelvis kodning, planering och analys i flera steg.
+4. **Snabbare svar och prioritet vid hög belastning:** OpenAI beskriver Plus som snabbare och med färre avbrott under perioder med hög trafik.
+5. **Utökade verktyg:** Röst, bildgenerering, filuppladdning och analys samt Deep Research där funktionen är tillgänglig.
+
+Plus är fortfarande ett abonnemang med användningsgränser; det betyder inte obegränsad åtkomst till alla modeller eller verktyg.
 
 ## Jämförelsetabell
 
-| Funktion | Gratiskonto | ChatGPT Plus (20 USD/mån) |
+| Funktion | ChatGPT Gratis | ChatGPT Plus |
 | :--- | :--- | :--- |
-| **Modellåtkomst** | Grundläggande modeller | Utökad tillgång till flaggskepps- och resonemangsmodeller |
-| **Användningsgränser** | Lägre (dynamiska baserat på belastning) | Högre meddelandegränser |
-| **Webbsökning & Filanalys** | Ingår i begränsad omfattning | Ingår med utökade gränser |
-| **Röstläge & Bildgenerering** | Begränsat / Basläge | Full tillgång till avancerat röstläge och bildverktyg |
-| **Anpassade GPT:er** | Använda befintliga GPT:er | Skapa, konfigurera och dela egna GPT:er |
-| **Svarshastighet vid hög belastning** | Standard | Prioriterad |
+| **Standard/modellåtkomst** | GPT-5.6 Luna | Bredare modellutbud, inklusive GPT-5.6 Sol |
+| **Resonemang** | Think där det är tillgängligt | Fler resonemangsalternativ, inklusive Medium och High i GPT-5.6 Sol |
+| **Användningsgränser** | Lägre och ibland separata per verktyg | Högre gränser |
+| **Webbsökning** | Ja | Ja |
+| **Fil- och dataanalys** | Ja, med lägre gränser | Ja, med högre gränser |
+| **Bildskapande** | Ja, med lägre gränser | Ja, med högre gränser |
+| **Prioritet vid hög belastning** | Standard | Prioriterad åtkomst och färre avbrott |
 
-## Hur vet du vilket alternativ du behöver?
+### Kan Plus-användare skapa egna GPT:er?
 
-* **Gratiskontot räcker ofta om:** Du använder ChatGPT för enstaka textutkast, korrekturlesning, vardagsfrågor eller enklare sammanfattningar.
-* **Plus-abonnemanget passar bättre om:** Du använder AI som ett dagligt arbetsverktyg för avancerad kodning, databearbetning, bildskapande eller behöver höga meddelandegränser utan avbrott.
+OpenAI:s aktuella Free Tier FAQ anger att **nya GPT:er inte kan skapas eller publiceras från personliga ChatGPT-konton**, oavsett om kontot är Free, Go, Plus eller Pro. Befintliga GPT:er kan fortfarande användas. För Business-, Enterprise- och Edu-arbetsytor kan möjligheten bero på arbetsytans inställningar och behörigheter.
 
-Oavsett kontotyp kan du förbättra dina svar genom att formulera tydliga instruktioner; läs våra råd om [hur du skriver bättre promptar i ChatGPT](/artiklar/sa-skriver-du-battre-promptar-i-chatgpt-15-konkreta-exempel/). Om du vill jämföra OpenAI mot andra leverantörer kan du även läsa vår artikel om [ChatGPT vs Claude](/artiklar/chatgpt-vs-claude-vad-ar-skillnaden/).
+## Vilket abonnemang passar ditt användningsmönster?
+
+Gratisnivån räcker för många som använder ChatGPT då och då och kan leva med lägre gränser. Plus är främst relevant om du använder tjänsten ofta och har nytta av bredare modellåtkomst, högre gränser och prioriterad åtkomst.
+
+För bättre resultat oavsett plan kan du läsa våra råd om [hur du skriver bättre promptar i ChatGPT](/artiklar/sa-skriver-du-battre-promptar-i-chatgpt-15-konkreta-exempel/). Du kan också läsa vår faktabaserade jämförelse mellan [ChatGPT och Claude](/artiklar/chatgpt-vs-claude-vad-ar-skillnaden/).
