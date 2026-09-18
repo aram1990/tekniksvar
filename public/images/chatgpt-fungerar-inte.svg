@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0F172A"/>
+
+  <rect x="180" y="80" width="440" height="290" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Terminal Header -->
+  <rect x="180" y="80" width="440" height="40" rx="16" fill="#0F172A"/>
+  <circle cx="210" cy="100" r="6" fill="#EF4444"/>
+  <circle cx="230" cy="100" r="6" fill="#F59E0B"/>
+  <circle cx="250" cy="100" r="6" fill="#10B981"/>
+  <text x="400" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">ChatGPT Status & Felsökning</text>
+
+  <!-- Warning Symbol -->
+  <circle cx="400" cy="180" r="35" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+  <path d="M400 160V190M400 202V206" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Error Text -->
+  <text x="400" y="250" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">Anslutningsfel / Network Error</text>
+  <text x="400" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Servern svarar inte eller cachen behöver rensas</text>
+
+  <!-- Action Button -->
+  <rect x="310" y="310" width="180" height="40" rx="8" fill="#2563EB"/>
+  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Kontrollera status</text>
+</svg>

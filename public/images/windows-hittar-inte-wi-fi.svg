@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0F172A"/>
+
+  <circle cx="400" cy="200" r="110" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Wi-Fi Waves -->
+  <path d="M330 160 A 90 90 0 0 1 470 160" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M350 190 A 60 60 0 0 1 450 190" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M370 220 A 30 30 0 0 1 430 220" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="400" cy="245" r="8" fill="#38BDF8"/>
+
+  <!-- Red Question / Search Indicator -->
+  <circle cx="470" cy="150" r="24" fill="#EF4444"/>
+  <text x="470" y="158" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="middle">?</text>
+
+  <text x="400" y="350" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">Inga Wi-Fi-nätverk hittades</text>
+  <text x="400" y="380" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Återställ nätverkskort & drivrutiner i Windows 11</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0F172A"/>
+
+  <rect x="180" y="80" width="440" height="290" rx="16" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="210" y="125" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Batterianvändning per app</text>
+
+  <!-- App 1 -->
+  <text x="210" y="170" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">App A (Bakgrund)</text>
+  <rect x="360" y="155" width="180" height="20" rx="10" fill="#EF4444"/>
+  <text x="555" y="170" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#EF4444">38 %</text>
+
+  <!-- App 2 -->
+  <text x="210" y="220" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">App B</text>
+  <rect x="360" y="205" width="110" height="20" rx="10" fill="#2563EB"/>
+  <text x="480" y="220" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#38BDF8">22 %</text>
+
+  <!-- App 3 -->
+  <text x="210" y="270" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">Skärm & System</text>
+  <rect x="360" y="255" width="70" height="20" rx="10" fill="#334155"/>
+  <text x="440" y="270" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#94A3B8">14 %</text>
+
+  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="13" fill="#38BDF8" font-weight="600" text-anchor="middle">Identifiera & begränsa strömtjuvar i Android</text>
+</svg>

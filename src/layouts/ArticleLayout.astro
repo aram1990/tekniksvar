@@ -23,12 +23,25 @@ const topicNames: Record<string, string> = {
   ai: 'AI',
   windows: 'Windows',
   android: 'Android',
+  appar: 'Appar & Webb',
+  webb: 'Appar & Webb',
   guider: 'Guider',
   problem: 'Problem',
   jamforelser: 'Jämförelser',
 };
 
-const topicPath = topicNames[topic] ? `/${topic}/` : '/guider/';
+const topicPaths: Record<string, string> = {
+  ai: '/ai/',
+  windows: '/windows/',
+  android: '/android/',
+  appar: '/appar/',
+  webb: '/appar/',
+  guider: '/guider/',
+  problem: '/problem/',
+  jamforelser: '/jamforelser/',
+};
+
+const topicPath = topicPaths[topic] || '/guider/';
 
 const breadcrumbs = [
   { label: topicNames[topic] || 'Guider', href: topicPath },
@@ -58,7 +71,7 @@ const articleSchema: Record<string, any> = {
     "url": "https://tekniksvar.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://tekniksvar.com/images/logo.svg"
+      "url": "https://tekniksvar.com/favicon-192x192.png"
     }
   },
   "datePublished": publishedAt,

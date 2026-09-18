@@ -5,5 +5,11 @@ export default defineConfig({
   site: 'https://tekniksvar.com',
   output: 'static',
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) =>
+        page !== 'https://tekniksvar.com/sok/' &&
+        page !== 'https://tekniksvar.com/404/',
+    }),
+  ],
 });
