@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
-  <rect width="800" height="450" fill="#0F172A"/>
-  <path d="M400 120 L480 200 H320 Z" fill="#10B981"/>
-  <rect x="360" y="200" width="80" height="80" fill="#10B981"/>
-  <circle cx="400" cy="240" r="100" fill="none" stroke="#EF4444" stroke-width="4" stroke-dasharray="8 8"/>
-  <text x="400" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#FFFFFF" font-weight="700">Wi-Fi ansluten — Inget internet</text>
-</svg>

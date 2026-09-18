@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
-  <rect width="800" height="450" fill="#0F172A"/>
-  <rect x="200" y="120" width="400" height="30" rx="6" fill="#1E293B"/>
-  <rect x="200" y="120" width="390" height="30" rx="6" fill="#EF4444"/>
-  <text x="400" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">14.8 GB av 15 GB använt (98 %)</text>
-  <text x="400" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#94A3B8">Gmail • Google Drive • Google Foto</text>
-</svg>

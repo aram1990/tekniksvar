@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
-  <rect width="800" height="450" fill="#1D4ED8"/>
-  <text x="120" y="160" font-family="system-ui, sans-serif" font-size="70" font-weight="300" fill="#FFFFFF">:(</text>
-  <text x="120" y="240" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF">Datorn stötte på ett problem och måste startas om.</text>
-  <text x="120" y="290" font-family="monospace" font-size="14" fill="#93C5FD">STOPP-KOD: CRITICAL_PROCESS_DIED</text>
-</svg>
