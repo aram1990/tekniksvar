@@ -8,18 +8,18 @@
   <text x="150" y="175" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">0 kr</text>
   <text x="150" y="195" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8">/ månad</text>
   <path d="M150 220H350" stroke="#334155" stroke-width="1"/>
-  <text x="150" y="250" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ GPT-4o mini</text>
-  <text x="150" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ Begränsad GPT-4o</text>
-  <text x="150" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ Webbsökning</text>
+  <text x="150" y="250" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ Grundläggande modellåtkomst</text>
+  <text x="150" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ Lägre användningsgränser</text>
+  <text x="150" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">✓ Webb, filer &amp; analys</text>
 
   <!-- Plus Tier Card -->
   <rect x="420" y="80" width="260" height="290" rx="16" fill="#1E293B" stroke="#2563EB" stroke-width="2"/>
   <rect x="450" y="110" width="80" height="26" rx="13" fill="#2563EB"/>
   <text x="490" y="127" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">PLUS</text>
-  <text x="450" y="175" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">~20 USD</text>
+  <text x="450" y="175" font-family="system-ui, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">20 USD</text>
   <text x="450" y="195" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8">/ månad</text>
   <path d="M450 220H650" stroke="#334155" stroke-width="1"/>
-  <text x="450" y="250" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Full GPT-4o & o1</text>
-  <text x="450" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Bildgenerering</text>
-  <text x="450" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Advanced Voice Mode</text>
+  <text x="450" y="250" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Bredare modellåtkomst</text>
+  <text x="450" y="280" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Högre användningsgränser</text>
+  <text x="450" y="310" font-family="system-ui, sans-serif" font-size="14" fill="#38BDF8" font-weight="600">★ Avancerade verktyg &amp; röst</text>
 </svg>

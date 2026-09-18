@@ -7,8 +7,8 @@
   <text x="235" y="168" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="middle">GPT</text>
   <text x="235" y="230" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">ChatGPT</text>
   <text x="235" y="260" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">OpenAI</text>
-  <rect x="140" y="285" width="190" height="30" rx="6" fill="#0F172A"/>
-  <text x="235" y="305" font-family="system-ui, sans-serif" font-size="12" fill="#38BDF8" font-weight="600" text-anchor="middle">Röst, Bild & Python</text>
+  <rect x="130" y="285" width="210" height="30" rx="6" fill="#0F172A"/>
+  <text x="235" y="305" font-family="system-ui, sans-serif" font-size="12" fill="#38BDF8" font-weight="600" text-anchor="middle">Multimodal &amp; Webbsökning</text>
 
   <!-- VS Badge -->
   <circle cx="400" cy="225" r="30" fill="#0F172A" stroke="#334155" stroke-width="2"/>
@@ -20,6 +20,6 @@
   <text x="565" y="168" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">Claude</text>
   <text x="565" y="230" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">Claude</text>
   <text x="565" y="260" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Anthropic</text>
-  <rect x="470" y="285" width="190" height="30" rx="6" fill="#0F172A"/>
-  <text x="565" y="305" font-family="system-ui, sans-serif" font-size="12" fill="#FBBF24" font-weight="600" text-anchor="middle">Text, Kod & Artifacts</text>
+  <rect x="460" y="285" width="210" height="30" rx="6" fill="#0F172A"/>
+  <text x="565" y="305" font-family="system-ui, sans-serif" font-size="12" fill="#FBBF24" font-weight="600" text-anchor="middle">Dokument &amp; Artifacts</text>
 </svg>

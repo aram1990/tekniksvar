@@ -38,12 +38,12 @@ Detta fel uppstår när anslutningen mellan din webbläsare och OpenAI kopplas b
 * **Lösning:** Be ChatGPT om kortare svar åt gången eller dela upp instruktionen i flera steg. Om du laddar upp dokument, följ råden i vår guide för [hur du använder PDF-filer i ChatGPT](/artiklar/sa-anvander-du-pdf-filer-i-chatgpt-battre-fragor-och-vanliga-mistag/).
 
 ### "Too Many Requests" / Kvotbegränsning
-Du har skickat för många meddelanden under en kort tidsperiod eller nått gränsen för din nuvarande modell.
-* **Lösning:** Vänta 15–30 minuter eller växla till en lättare modell i gränssnittet. Om du har ett gratiskonto kan du läsa vår översikt av [gratis vs betald ChatGPT](/artiklar/gratis-vs-betald-chatgpt-vad-far-du-egentligen/) för att se hur meddelandegränserna skiljer sig.
+Du har skickat för många meddelanden under en kort tidsperiod eller nått den tillfälliga användningsgränsen för din nuvarande modell.
+* **Lösning:** Gör en kort paus tills gränsfönstret återställs eller växla till en annan tillgänglig modell i gränssnittet. Om du har ett gratisknto kan du läsa vår översikt av [gratis vs betald ChatGPT](/artiklar/gratis-vs-betald-chatgpt-vad-far-du-egentligen/) för att se hur användningsgränserna skiljer sig.
 
-### "Access Denied" / Felkod 1020
-Säkerhetssystemet (Cloudflare) har tillfälligt blockerat din anslutning eller IP-adress.
-* **Lösning:** Stäng av VPN-tjänster, inaktivera aggressiva annonsblockerare eller testa att ansluta via mobilens surfzon.
+### "Access Denied" / Blockeras av säkerhetssystem
+Säkerhetssystemet har tillfälligt blockerat din anslutning eller IP-adress.
+* **Lösning:** Stäng av eventuella VPN-tjänster, inaktivera aggressiva webbläsartillägg eller testa att ansluta via mobilens surfzon.
 
 ## 3. Rensa webbläsarens cache och cookies
 
