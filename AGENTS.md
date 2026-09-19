@@ -16,13 +16,53 @@ This document serves as the permanent operating manual for AI agents (including 
 
 ---
 
-## 2. Source Verification & Image Rights
+## 2. Source Verification & Permanent Image Sourcing Policy
 
 * **Source Quality:** Prioritize primary sources (e.g., official support documentation from Microsoft, Google, OpenAI, Anthropic, Apple).
-* **Image Rights:**
-  * Use local assets or approved open licenses.
-  * Never use scraped competitor images, uncredited editorial stock, or generic low-quality AI graphics for every article.
-  * Always provide accurate `alt` text for images. Credit sources when required.
+* **Permanent Image Sourcing Rules for Articles:**
+  * **No AI-Generated / Custom SVG Hero Images:** DO NOT create AI-generated hero images. DO NOT create generic custom SVG hero illustrations for NEW articles unless explicitly requested. (Existing legacy custom SVGs may remain for now.)
+  * **Search the Web First:** Always research the web for a genuinely relevant, real-world image for each article.
+  * **Image Source Priority:**
+    1. *Official First-Party Sources:* Prefer images from the company/product being discussed (Microsoft, Google, OpenAI, Anthropic, Samsung, Apple, Mozilla, official press kits, media centers, newsrooms, support/documentation). Only use when reuse is reasonably permitted or provided as press/media material.
+    2. *Open-License Sources:* If no suitable official image exists, search Wikimedia Commons, Unsplash, Pexels, or Pixabay. Always verify license and usage terms before downloading.
+    3. *Real Screenshots:* For instructional articles, real screenshots captured from genuine current UI versions without exposing personal information and legally reasonable to reproduce. Never invent or AI-generate fake screenshots.
+  * **Prohibited Sources (NEVER USE):**
+    * Google Images search results page (use Google Images ONLY to discover original sources; always open and verify the original source page).
+    * Random blogs, competing publications, Reddit, Facebook / Instagram / TikTok.
+    * Stock agencies (Getty Images, Shutterstock, Alamy) or copyrighted news agencies.
+    * Watermarked images or unknown-license websites.
+  * **Image Rights & Source Record:** For every downloaded image, record:
+    * Original source URL
+    * Source / Creator
+    * License or usage basis
+    * Date accessed
+    * If license or usage rights are unclear: DO NOT USE. It is better to publish without a hero image than to use an image with uncertain rights.
+  * **"NO SAFE IMAGE FOUND" Fallback:** If no legally safe and relevant image can be found after searching, report `NO SAFE IMAGE FOUND` and publish the article WITHOUT a hero image rather than inventing one.
+  * **Local Asset Hosting & Optimization:**
+    * Do not hotlink external images.
+    * Download approved assets into `public/images/articles/[article-slug]/` using descriptive filenames.
+    * Preferred format: WebP.
+    * Target hero dimensions: approximately 1200x675 (16:9 ratio). Avoid unnecessarily large file sizes.
+  * **Visible Image Credits:** If attribution is required or appropriate, display a short visible image credit beneath the hero image (e.g., `Bild: Microsoft`, `Foto: [Photographer] / Unsplash`, `Bild: Wikimedia Commons / [Creator], CC BY-SA 4.0`). Do not falsely imply Tekniksvar created the image.
+  * **Article Frontmatter Fields:**
+    * `heroImage` (optional)
+    * `heroImageAlt` (optional)
+    * `heroImageCredit` (optional)
+    * `heroImageSource` (optional)
+  * **SEO / Accessibility:** Every image must have accurate, descriptive alt text without keyword stuffing or misleading text.
+  * **Final Report Requirement for Article Tasks:**
+    For every article publishing/creation task, report:
+    ```
+    IMAGE:
+    - chosen image:
+    - local filename:
+    - original source URL:
+    - source/creator:
+    - license/usage basis:
+    - image credit:
+    - alt text:
+    ```
+    If no image was used, explicitly report "NO SAFE IMAGE FOUND" and explain why.
 
 ---
 

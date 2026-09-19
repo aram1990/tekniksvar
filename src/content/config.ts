@@ -14,6 +14,7 @@ const articles = defineCollection({
     heroImage: z.string().optional(),
     heroImageAlt: z.string().optional(),
     heroImageCredit: z.string().optional(),
+    heroImageSource: z.string().optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
     sources: z.array(z.object({
