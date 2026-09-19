@@ -6,7 +6,7 @@ const breadcrumbs = [{ label: 'Kontakt' }];
 
 <PageLayout
   title="Kontakt"
-  description="Kontakta redaktionen på Tekniksvar angående frågor, synpunkter eller felaktigheter i våra artiklar."
+  description="Aktuell information om kontaktvägen till Tekniksvars redaktion."
   breadcrumbs={breadcrumbs}
 >
   <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">
@@ -14,30 +14,12 @@ const breadcrumbs = [{ label: 'Kontakt' }];
   </p>
 
   <div style="background: var(--color-white); border: 1px solid var(--color-gray-border); border-radius: var(--border-radius); padding: 1.75rem; margin: 2rem 0;">
-    <h2 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.75rem;">Skicka ett meddelande till redaktionen</h2>
+    <h2 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.75rem;">Kontaktvägen är tillfälligt stängd</h2>
     <p style="font-size: 0.95rem; color: var(--color-gray-dark); margin-bottom: 1.5rem;">
-      Fyll i formuläret nedan för att nå ansvarig redaktör.
+      Det går inte att skicka meddelanden från den här sidan just nu. Vi arbetar med att öppna en säker kontaktväg till redaktionen.
     </p>
-
-    <form style="display: flex; flex-direction: column; gap: 1.25rem;">
-      <div>
-        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-navy);">Ditt namn:</label>
-        <input type="text" required style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-gray-border); border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
-      </div>
-
-      <div>
-        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-navy);">E-postadress:</label>
-        <input type="email" required style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-gray-border); border-radius: 4px; font-size: 1rem; box-sizing: border-box;" />
-      </div>
-
-      <div>
-        <label style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-navy);">Meddelande:</label>
-        <textarea rows="5" required style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-gray-border); border-radius: 4px; font-size: 1rem; box-sizing: border-box; font-family: var(--font-sans);"></textarea>
-      </div>
-
-      <button type="submit" style="background: var(--color-accent); color: var(--color-white); border: 0; padding: 0.75rem 1.5rem; border-radius: 4px; font-weight: 700; cursor: pointer; align-self: flex-start;">
-        Skicka meddelande
-      </button>
-    </form>
+    <p style="font-size: 0.95rem; color: var(--color-gray-dark); margin: 0;">
+      Sidan uppdateras när en verifierad mottagaradress eller kontakttjänst har konfigurerats. Formuläret har tagits bort så att inga meddelanden ser ut att skickas utan att faktiskt levereras.
+    </p>
   </div>
 </PageLayout>
