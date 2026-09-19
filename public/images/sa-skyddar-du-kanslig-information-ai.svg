@@ -4,5 +4,5 @@
   <path d="M400 150L430 180H370L400 150Z" fill="#10B981"/>
   <rect x="360" y="180" width="80" height="70" rx="6" fill="#10B981"/>
   <circle cx="400" cy="210" r="8" fill="#0F172A"/>
-  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">AI-Sekretess & Dataskydd</text>
+  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">AI-Sekretess &amp; Dataskydd</text>
 </svg>

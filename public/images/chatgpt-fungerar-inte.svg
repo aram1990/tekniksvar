@@ -8,7 +8,7 @@
   <circle cx="210" cy="100" r="6" fill="#EF4444"/>
   <circle cx="230" cy="100" r="6" fill="#F59E0B"/>
   <circle cx="250" cy="100" r="6" fill="#10B981"/>
-  <text x="400" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">ChatGPT Status & Felsökning</text>
+  <text x="400" y="105" font-family="system-ui, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">ChatGPT Status &amp; Felsökning</text>
 
   <!-- Warning Symbol -->
   <circle cx="400" cy="180" r="35" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>

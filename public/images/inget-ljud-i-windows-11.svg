@@ -4,5 +4,5 @@
   <path d="M350 220C350 180 450 180 450 220" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
   <path d="M330 220L350 180L370 220" stroke="#38BDF8" stroke-width="3"/>
   <path d="M430 220L450 180L470 220" stroke="#38BDF8" stroke-width="3"/>
-  <text x="400" y="280" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Ljud & Högtalare Windows 11</text>
+  <text x="400" y="280" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">Ljud &amp; Högtalare Windows 11</text>
 </svg>
