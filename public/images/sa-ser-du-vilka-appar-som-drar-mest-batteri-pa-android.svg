@@ -17,9 +17,9 @@
   <text x="480" y="220" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#38BDF8">22 %</text>
 
   <!-- App 3 -->
-  <text x="210" y="270" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">Skärm & System</text>
+  <text x="210" y="270" font-family="system-ui, sans-serif" font-size="14" fill="#CBD5E1">Skärm &amp; System</text>
   <rect x="360" y="255" width="70" height="20" rx="10" fill="#334155"/>
   <text x="440" y="270" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#94A3B8">14 %</text>
 
-  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="13" fill="#38BDF8" font-weight="600" text-anchor="middle">Identifiera & begränsa strömtjuvar i Android</text>
+  <text x="400" y="335" font-family="system-ui, sans-serif" font-size="13" fill="#38BDF8" font-weight="600" text-anchor="middle">Identifiera &amp; begränsa strömtjuvar i Android</text>
 </svg>

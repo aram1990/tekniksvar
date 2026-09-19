@@ -11,5 +11,5 @@
   <circle cx="400" cy="200" r="55" stroke="#EF4444" stroke-width="4" stroke-dasharray="12 12"/>
 
   <text x="400" y="295" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">Bluetooth frånkopplad</text>
-  <text x="400" y="325" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Inställningar & Drivrutiner i Windows 11</text>
+  <text x="400" y="325" font-family="system-ui, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">Inställningar &amp; Drivrutiner i Windows 11</text>
 </svg>
