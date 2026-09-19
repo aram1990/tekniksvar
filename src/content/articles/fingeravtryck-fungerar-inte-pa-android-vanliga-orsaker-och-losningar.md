@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "fingeravtryck", "biometri", "samsung", "pixel", "felsökning"]
-heroImage: "/images/articles/fingeravtryck-fungerar-inte-pa-android-vanliga-orsaker-och-losningar/fingeravtryck-fungerar-inte-pa-android-vanliga-orsaker-och-losningar.webp"
-heroImageAlt: "Fingeravtrycksläsare på en Android-mobil"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/person-unlocking-smartphone-fingerprint-dP2M7M49sY"
 sources:
   - name: "Google Android Help — Fix fingerprint issues on Android"
     url: "https://support.google.com/pixelphone/answer/6285273"

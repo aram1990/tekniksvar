@@ -6,13 +6,13 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["ai", "problem"]
 tags: ["chatgpt", "filanalys", "pdf-problem", "openai", "felsökning"]
-heroImage: "/images/articles/chatgpt-kan-inte-lasa-en-fil-vanliga-orsaker-och-losningar/chatgpt-kan-inte-lasa-en-fil-vanliga-orsaker-och-losningar.webp"
-heroImageAlt: "Uppladdning och analys av dokument på en bärbar dator"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/a-stack-of-papers-sitting-on-top-of-a-table-589M3mI2S1U"
 sources:
   - name: "OpenAI Help Center — File uploads and data analysis FAQ"
     url: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt"
+heroImage: "/images/articles/chatgpt-kan-inte-lasa-en-fil-vanliga-orsaker-och-losningar/chatgpt-kan-inte-lasa-en-fil-vanliga-orsaker-och-losningar.webp"
+heroImageAlt: "Dokumentanalys och filhantering i ChatGPT"
+heroImageCredit: "Bild: Gio Antonio / Wikimedia Commons, CC BY-SA 4.0"
+heroImageSource: "https://commons.wikimedia.org/wiki/File:ChatGPT_5.2_Thinking_Wikipedia_historia_PDF_screenshot.png"
 ---
 
 Att ladda upp filer till ChatGPT för analys, sammanfattning eller databehandling är en av de mest användbara funktionerna i tjänsten. Men ibland möts du av felmeddelanden som *"Error analyzing file"*, *"Unable to extract text"* eller att uppladdningen helt enkelt fastnar.

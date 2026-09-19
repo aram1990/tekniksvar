@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "explanation"
 topics: ["ai"]
 tags: ["ai-hallucinationer", "chatgpt", "ai-fakta", "sprakmodeller", "källkritik"]
-heroImage: "/images/articles/vad-ar-ai-hallucinationer-darfor-kan-ai-ge-fel-svar/vad-ar-ai-hallucinationer-darfor-kan-ai-ge-fel-svar.webp"
-heroImageAlt: "Konceptbild för artificiell intelligens och databearbetning"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/a-close-up-of-a-glowing-object-in-the-dark-p915N_K3-A0"
 sources:
   - name: "OpenAI Research — Practices for Governing Language Models"
     url: "https://openai.com/research/"

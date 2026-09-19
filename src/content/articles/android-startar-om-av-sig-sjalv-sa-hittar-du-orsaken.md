@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "omstart", "felsökning", "batteri", "samsung", "pixel"]
-heroImage: "/images/articles/android-startar-om-av-sig-sjalv-sa-hittar-du-orsaken/android-startar-om-av-sig-sjalv-sa-hittar-du-orsaken.webp"
-heroImageAlt: "Android-mobil med skärm aktiv under systemstart"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/android-smartphone-display-fP2M7M49sY"
 sources:
   - name: "Google Android Help — Fix a device that restarts unexpectedly"
     url: "https://support.google.com/android/answer/7664692"

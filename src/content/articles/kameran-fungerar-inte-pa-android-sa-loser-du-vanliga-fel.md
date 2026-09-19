@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "kamera", "kamerafel", "samsung", "pixel", "felsökning"]
-heroImage: "/images/articles/kameran-fungerar-inte-pa-android-sa-loser-du-vanliga-fel/kameran-fungerar-inte-pa-android-sa-loser-du-vanliga-fel.webp"
-heroImageAlt: "Kameralins på en baksida av en Android-mobil"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/person-holding-smartphone-camera-eP2M7M49sY"
 sources:
   - name: "Google Android Help — Fix your Camera app on Android"
     url: "https://support.google.com/googlecamera/answer/6306624"

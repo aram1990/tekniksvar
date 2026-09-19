@@ -6,13 +6,13 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "usb-felsökning", "hårddisk", "drivrutiner", "enhetshanteraren"]
-heroImage: "/images/articles/usb-enhet-kanns-inte-igen-i-windows-11-steg-for-steg/usb-enhet-kanns-inte-igen-i-windows-11-steg-for-steg.webp"
-heroImageAlt: "USB-minne anslutet till en bärbar dator"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/black-and-silver-usb-flash-drive-on-black-surface-L_J0M7M49sY"
 sources:
   - name: "Microsoft Support — USB device not recognized error"
     url: "https://support.microsoft.com/en-us/topic/usb-port-may-stop-responding-after-you-frequently-insert-and-remove-a-usb-device-61d020d2-df75-9e67-d8cf-94d334dd163c"
+heroImage: "/images/articles/usb-enhet-kanns-inte-igen-i-windows-11-steg-for-steg/usb-enhet-kanns-inte-igen-i-windows-11-steg-for-steg.webp"
+heroImageAlt: "USB-minne för datalagring"
+heroImageCredit: "Bild: Liftarn / Wikimedia Commons, CC BY-SA 3.0"
+heroImageSource: "https://commons.wikimedia.org/wiki/File:USB_flash_drive.jpg"
 ---
 
 När du ansluter ett USB-minne, en extern hårddisk eller ett tangentbord till datorn och möts av meddelandet *"USB-enheten känns inte igen"* (USB device not recognized) beror det oftast på tillfälliga kommunikationsfel, drivrutinsproblem eller strömhantering i Windows 11.

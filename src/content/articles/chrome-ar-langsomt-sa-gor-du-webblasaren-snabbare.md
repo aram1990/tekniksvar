@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "guide"
 topics: ["appar", "guider"]
 tags: ["chrome", "google-chrome", "webbläsare", "prestanda", "minnesbesparing"]
-heroImage: "/images/articles/chrome-ar-langsomt-sa-gor-du-webblasaren-snabbare/chrome-ar-langsomt-sa-gor-du-webblasaren-snabbare.webp"
-heroImageAlt: "Google Chrome webbläsare öppen på en datorskärm"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/laptop-showing-chrome-browser-jP2M7M49sY"
 sources:
   - name: "Google Chrome Help — Speed up Google Chrome"
     url: "https://support.google.com/chrome/answer/95669"

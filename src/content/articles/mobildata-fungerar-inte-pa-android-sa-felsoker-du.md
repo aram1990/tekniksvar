@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "mobildata", "4g", "5g", "apn", "felsökning"]
-heroImage: "/images/articles/mobildata-fungerar-inte-pa-android-sa-felsoker-du/mobildata-fungerar-inte-pa-android-sa-felsoker-du.webp"
-heroImageAlt: "Smarttelefon som visar mobildata och signalstyrka"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/black-smartphone-on-white-surface-cP2M7M49sY"
 sources:
   - name: "Google Android Help — Fix mobile data connections"
     url: "https://support.google.com/android/answer/9056348"

@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "skrivare", "offline-skrivare", "print-spooler", "felsökning"]
-heroImage: "/images/articles/skrivaren-ar-offline-i-windows-11-sa-far-du-den-online-igen/skrivaren-ar-offline-i-windows-11-sa-far-du-den-online-igen.webp"
-heroImageAlt: "Modern kontorsskrivare redo för utskrift"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/white-printer-paper-on-black-table-A7fM7M49sY"
 sources:
   - name: "Microsoft Support — Troubleshoot printer offline status"
     url: "https://support.microsoft.com/en-us/windows/troubleshoot-offline-printer-problems-in-windows-f12d5f3d-d12d-4340-b611-3962f5f19067"

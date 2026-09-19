@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "guide"
 topics: ["windows", "guider"]
 tags: ["windows-11", "batteritid", "laptop", "strömförbrukning", "batteri"]
-heroImage: "/images/articles/batteriet-tar-slut-snabbt-pa-en-windows-laptop-10-saker-att-kontrollera/batteriet-tar-slut-snabbt-pa-en-windows-laptop-10-saker-att-kontrollera.webp"
-heroImageAlt: "Bärbar dator som laddas med strömkabel"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/laptop-on-desk-charging-mP2M7M49sY"
 sources:
   - name: "Microsoft Support — Battery saving tips for Windows"
     url: "https://support.microsoft.com/en-us/windows/battery-saving-tips-for-windows-a85056a0-8d14-7331-1fc0-88013e2fe433"

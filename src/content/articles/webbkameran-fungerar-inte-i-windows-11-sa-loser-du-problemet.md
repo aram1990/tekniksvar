@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "webbkamera", "felsökning", "drivrutiner", "integritet"]
-heroImage: "/images/articles/webbkameran-fungerar-inte-i-windows-11-sa-loser-du-problemet/webbkameran-fungerar-inte-i-windows-11-sa-loser-du-problemet.webp"
-heroImageAlt: "Webbkamera på en bärbar dator med Windows 11"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/black-laptop-computer-on-white-table-0vA2S1-S4iU"
 sources:
   - name: "Microsoft Support — Camera doesn't work in Windows"
     url: "https://support.microsoft.com/en-us/windows/camera-doesn-t-work-in-windows-32ce526a-31e5-2200-8a92-26222faf7638"

@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "comparison"
 topics: ["ai", "jamforelser"]
 tags: ["chatgpt", "copilot", "microsoft", "openai", "ai-jamforelse"]
-heroImage: "/images/articles/chatgpt-vs-microsoft-copilot-vad-ar-skillnaden/chatgpt-vs-microsoft-copilot-vad-ar-skillnaden.webp"
-heroImageAlt: "Microsoft Copilot och AI-assistent i Windows"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/abstract-3d-render-ai"
 sources:
   - name: "Microsoft Official Copilot Documentation"
     url: "https://support.microsoft.com/en-us/copilot"

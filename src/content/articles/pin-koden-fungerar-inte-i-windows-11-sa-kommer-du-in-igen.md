@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "windows-hello", "pin-kod", "inloggning", "felsökning"]
-heroImage: "/images/articles/pin-koden-fungerar-inte-i-windows-11-sa-kommer-du-in-igen/pin-koden-fungerar-inte-i-windows-11-sa-kommer-du-in-igen.webp"
-heroImageAlt: "Inloggningsskärm på en Windows-laptop"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/security-cybersecurity-concept-laptop-bP2M7M49sY"
 sources:
   - name: "Microsoft Support — Reset your PIN when you're not signed in to Windows"
     url: "https://support.microsoft.com/en-us/windows/reset-your-pin-when-you-re-not-signed-in-to-windows-a386b813-9b57-48e7-050c-1e826337ef4a"

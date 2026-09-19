@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["appar", "problem"]
 tags: ["gmail", "google", "e-post", "lagring", "felsökning"]
-heroImage: "/images/articles/gmail-tar-inte-emot-mejl-10-saker-att-kontrollera/gmail-tar-inte-emot-mejl-10-saker-att-kontrollera.webp"
-heroImageAlt: "E-post och inbox på en bärbar dator"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/person-checking-email-on-laptop-hP2M7M49sY"
 sources:
   - name: "Google Gmail Help — Fix missing Gmail messages"
     url: "https://support.google.com/mail/answer/7015314"

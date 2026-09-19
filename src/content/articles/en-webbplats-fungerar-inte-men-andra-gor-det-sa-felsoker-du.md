@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["appar", "problem"]
 tags: ["internet", "webbplats-fel", "dns", "webbläsare", "felsökning"]
-heroImage: "/images/articles/en-webbplats-fungerar-inte-men-andra-gor-det-sa-felsoker-du/en-webbplats-fungerar-inte-men-andra-gor-det-sa-felsoker-du.webp"
-heroImageAlt: "Webbläsarskärm som visar ett anslutningsfel"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/matrix-code-digital-screen-error-kP2M7M49sY"
 sources:
   - name: "Google Chrome Help — Fix page loading error messages"
     url: "https://support.google.com/chrome/answer/95669"

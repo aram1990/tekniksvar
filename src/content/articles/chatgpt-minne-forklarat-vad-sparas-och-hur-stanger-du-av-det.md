@@ -1,69 +1,68 @@
 ---
 title: "ChatGPT-minne förklarat – vad sparas och hur stänger du av det?"
-description: "Lär dig hur ChatGPT-minne fungerar, skillnaden mellan konversationshistorik och permanent minne, samt hur du hanterar eller raderar sparad information."
+description: "Lär dig hur ChatGPT-minne fungerar i den senaste versionen, vad som sammanfattas automatiskt, hur du hanterar minnet och hur du stänger av funktionen."
 author: "Aram Anwar"
 publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "explanation"
 topics: ["ai"]
 tags: ["chatgpt", "openai", "ai-minne", "integritet", "ai-inställningar"]
-heroImage: "/images/articles/chatgpt-minne-forklarat-vad-sparas-och-hur-stanger-du-av-det/chatgpt-minne-forklarat-vad-sparas-och-hur-stanger-du-av-det.webp"
-heroImageAlt: "Gränssnitt för ChatGPT i en webbläsare"
-heroImageCredit: "Bild: Wikimedia Commons / CC BY-SA 4.0"
-heroImageSource: "https://commons.wikimedia.org/wiki/File:ChatGPT.png"
 sources:
   - name: "OpenAI Help Center — Memory FAQ"
     url: "https://help.openai.com/en/articles/8590148-memory-faq"
   - name: "OpenAI — Memory and new controls for ChatGPT"
     url: "https://openai.com/index/memory-and-new-controls-for-chatgpt/"
+heroImage: "/images/articles/chatgpt-minne-forklarat-vad-sparas-och-hur-stanger-du-av-det/chatgpt-minne-forklarat-vad-sparas-och-hur-stanger-du-av-det.webp"
+heroImageAlt: "Gränssnitt för ChatGPT i en webbläsare"
+heroImageCredit: "Bild: Lugab89 / Wikimedia Commons, CC BY 3.0"
+heroImageSource: "https://commons.wikimedia.org/wiki/File:ChatGPT.png"
 ---
 
-Funktionen för **minne i ChatGPT** tillåter AI-modellen att komma ihåg detaljer, preferenser och sammanhang från tidigare konversationer. Istället för att du behöver upprepa dina bakgrundsuppgifter varje gång du startar en ny chatt, kan ChatGPT automatiskt plocka upp information som du tidigare har delat.
+Funktionen **Minne (Memory) i ChatGPT** gör att AI-modellen kan skapa sammanhängande kunskap och förståelse för dina preferenser, projekt och arbetssätt över tid. Istället för att fungera som enbart en statisk lista av sparade anteckningar, analyserar och syntetiserar ChatGPT automatiskt relevanta fakta från dina konversationer.
 
-I den här artikeln förklarar vi hur minnesfunktionen fungerar enligt gällande specifikationer från OpenAI, skillnaden mellan chatthistorik och permanent minne, samt hur du granskar, ändrar eller stänger av minneslagringen helt.
+I den här artikeln förklarar vi hur minnessystemet fungerar enligt gällande specifikationer från OpenAI, vilka källor som bygger upp minnet, samt hur du hanterar, rensar eller stänger av minnesfunktionen.
 
-## Skillnaden mellan chatthistorik och minne
+## Hur ChatGPT-minne fungerar
 
-Det är viktigt att skilja på två olika begrepp i ChatGPT:
+Till skillnad från en vanlig chatthistorik där modellen bara ser meddelandena i det öppna fönstret, tillåter Minne att ChatGPT plockar upp och uppdaterar information kontinuerligt mellan olika chattar.
 
-1. **Chatthistorik (Chat History & Training):** Sparar dina tidigare konversationer i sidopanelen så att du kan gå tillbaka till dem. Denna historik används även (om du inte inaktiverar inställningen) för att träna OpenAI:s modeller.
-2. **Minne (Memory):** En specifik funktion där ChatGPT plockar ut fakta om dig (exempelvis vilken kodstandard du föredrar, vilka husdjur du har eller vilket format du vill ha på sammanfattningar) och sparar dessa som strukturerade minnesanteckningar.
+* **Automatisk syntetisering:** När du pratar med ChatGPT kan modellen själv identifiera viktig bakgrundsinformation (exempelvis dina yrkesroller, vilket kodspråk du använder eller dina språkpreferenser) och väva in detta i sin övergripande förståelse.
+* **Minnessammanfattning (Memory summary):** I inställningarna visas en sammanfattning av de mest framträdande minnespunkterna. Det är dock viktigt att förstå att minnessammanfattningen inte nödvändigtvis visar exakt varje detalj eller källa som modellen har registrerat i bakgrunden.
 
-## Vad sparas i minnet?
+## Källor som bygger upp minnet
 
-ChatGPT kan spara minnen på två sätt:
-* **Automatisk inlärning:** När du nämner något i en konversation kan ChatGPT avgöra att detaljen är användbar för framtida chattar och sparar den automatiskt (exempelvis: "Jag jobbar som frontendutvecklare i React").
-* **Direkt instruktion:** Du kan beröva ChatGPT på gissningar genom att explicit be den komma ihåg något: *"Kom ihåg att jag alltid vill ha svar på svenska och korta punktlistor."*
+ChatGPT kan hämta och syntetisera minneskontext från flera olika källor:
 
-Du ser en liten notis i gränssnittet när ett nytt minne skapas.
+1. **Tidigare konversationer (Past chats):** Fakta du nämnt under vanliga interaktioner.
+2. **Uppladdade filer (Uploaded files):** Dokument och kalkylark som du delat och bett modellen analysera.
+3. **Anslutna appar och verktyg (Connected apps):** Tjänster och integrationer som kopplats till ditt OpenAI-konto (där detta stöds).
+4. **Direkta instruktioner (Saved memories):** När du explicit ber modellen i chatten att komma ihåg en specifik regel eller detalj.
 
-## Så granskar och raderar du sparade minnen
+## Skillnaden mellan att stänga av minnet och att radera historik
 
-Du har full kontroll över vad ChatGPT har sparat om dig. För att se alla sparade minnesnoteringar:
+En av de vanligaste missuppfattningarna är vad som händer när du inaktiverar minnesfunktionen:
 
-1. Klicka på din profilbild eller ditt namn i ChatGPT och välj **Inställningar (Settings)**.
-2. Gå till sektionen **Personalization (Personanpassning)**.
-3. Klicka på **Manage (Hantera)** bredvid **Memory (Minne)**.
+* **Att stänga av Minne (Memory):** Förhindrar ChatGPT från att använda befintlig minneskontext eller skapa nya minnesnoteringar i framtida konversationer. **Att slå av minnesknappen raderar INTE dina tidigare chattar eller filer.**
+* **Fullständig borttagning av information:** Om du helt vill ta bort en sparad uppgift eller minneskontext räcker det inte alltid med att bara stänga av reglaget. Du kan behöva ta bort den specifika minnessammanfattningen under inställningarna, samt radera eller arkivera de ursprungliga källchattarna och uppladdade filerna där informationen först framkom.
 
-Här visas en lista över alla aktiva minnesanteckningar. Du kan klicka på papperskorgssymbolen bredvid ett enskilt minne för att ta bort det, eller välja **Clear all memory** för att radera hela registret.
+## Så stänger du av eller hanterar Minne
 
-## Så stänger du av minnesfunktionen helt
+Gör så här för att granska eller inaktivera minnesfunktionen på webben eller i appen:
 
-Om du inte vill att ChatGPT ska spara information mellan konversationer kan du enkelt inaktivera funktionen:
+1. Klicka på din profilbild eller ditt namn och öppna **Inställningar (Settings)**.
+2. Navigera till sektionen **Personanpassning (Personalization)**.
+3. Under **Minne (Memory)** kan du slå av eller på huvudreglaget.
+4. Klicka på **Hantera (Manage)** bredvid minnessammanfattningen för att granska eller radera enskilda sparade punkter.
 
-1. Öppna **Settings (Inställningar)** i ChatGPT.
-2. Navigera till **Personalization (Personanpassning)**.
-3. Slå av reglaget för **Memory (Minne)**.
+*Observera att tillgänglighet för minnesfunktionen samt specifika admin-kontroller kan variera beroende på ditt abonnemang (Free, Plus, Team, Enterprise), geografiska regioner samt vilken plattform (webb, iOS, Android) du använder.*
 
-När reglaget är avstängt kommer ChatGPT inte längre att skapa nya minnesnoteringar eller använda befintliga minnen i sina svar.
+## Tillfälliga chattar (Temporary Chat)
 
-## Tillfälliga chattar (Temporary Chats)
+Om du vill ställa frågor utan att ChatGPT använder ditt sparade minne eller skapar nya minnesnoteringar kan du aktivera en **Tillfällig chatt (Temporary Chat)**:
 
-Om du tillfälligt vill ställa en fråga utan att använda dina sparade minnen eller spara konversationen i historiken kan du starta en **Temporary Chat** (Tillfällig chatt):
-
-* Klicka på modellväljaren längst upp i gränssnittet och aktivera **Temporary Chat**.
-* Tillfälliga chattar använder inte sparade minnen, skapar inga nya minnen och visas inte i sidopanelen.
+* Klicka på modellväljaren längst upp i gränssnittet och välj *Temporary Chat*.
+* Tillfälliga chattar sparar ingen historik i sidopanelen, skapar inga minnen och tränar inte OpenAI:s modeller.
 
 ## Relaterade artiklar
 * [Vad är ChatGPT och hur fungerar det?](/artiklar/vad-ar-chatgpt-och-hur-fungerar-det/)
 * [Så skyddar du känslig information när du använder AI-tjänster](/artiklar/sa-skyddar-du-kanslig-information-nar-du-anvander-ai-tjanster/)
-* [Gratis vs betald ChatGPT – vad får du egentligen?](/artiklar/gratis-vs-betald-chatgpt-vad-far-du-egentligen/)
+* [ChatGPT vs Microsoft Copilot – vad är skillnaden?](/artiklar/chatgpt-vs-microsoft-copilot-vad-ar-skillnaden/)

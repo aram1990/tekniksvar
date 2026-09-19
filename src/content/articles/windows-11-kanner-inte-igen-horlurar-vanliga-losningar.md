@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["windows", "problem"]
 tags: ["windows-11", "hörlurar", "ljudproblem", "bluetooth", "realtek"]
-heroImage: "/images/articles/windows-11-kanner-inte-igen-horlurar-vanliga-losningar/windows-11-kanner-inte-igen-horlurar-vanliga-losningar.webp"
-heroImageAlt: "Hörlurar anslutna till en dator"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/black-wireless-headphones-on-yellow-background-gP2M7M49sY"
 sources:
   - name: "Microsoft Support — Fix sound or audio problems in Windows"
     url: "https://support.microsoft.com/en-us/windows/fix-sound-or-audio-problems-in-windows-731748d5-07a7-4791-0c3b-20412581f13b"

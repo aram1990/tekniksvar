@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "guide"
 topics: ["ai", "guider"]
 tags: ["chatgpt", "excel", "csv", "dataanalys", "openai"]
-heroImage: "/images/articles/sa-anvander-du-chatgpt-for-att-analysera-excel-och-csv-filer/sa-anvander-du-chatgpt-for-att-analysera-excel-och-csv-filer.webp"
-heroImageAlt: "Kalkylark och datadiagram på en laptopskärm"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/person-using-macbook-pro-data-analysis-vL3hP6v0g1s"
 sources:
   - name: "OpenAI Help Center — Advanced Data Analysis"
     url: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt"

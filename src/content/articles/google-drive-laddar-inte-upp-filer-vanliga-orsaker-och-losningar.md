@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["appar", "problem"]
 tags: ["google-drive", "google", "molnlagring", "filuppladdning", "felsökning"]
-heroImage: "/images/articles/google-drive-laddar-inte-upp-filer-vanliga-orsaker-och-losningar/google-drive-laddar-inte-upp-filer-vanliga-orsaker-och-losningar.webp"
-heroImageAlt: "Molnlagring och filuppladdning i webbläsare"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/cloud-computing-technology-concept-iP2M7M49sY"
 sources:
   - name: "Google Drive Help — Fix problems uploading files to Google Drive"
     url: "https://support.google.com/drive/answer/2424368"

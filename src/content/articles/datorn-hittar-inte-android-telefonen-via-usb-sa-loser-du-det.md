@@ -6,10 +6,6 @@ publishedAt: "2026-09-19T10:00:00+02:00"
 contentType: "fix"
 topics: ["android", "problem"]
 tags: ["android", "usb-anslutning", "filöverföring", "mtp", "windows-11", "felsökning"]
-heroImage: "/images/articles/datorn-hittar-inte-android-telefonen-via-usb-sa-loser-du-det/datorn-hittar-inte-android-telefonen-via-usb-sa-loser-du-det.webp"
-heroImageAlt: "Android-telefon ansluten till laptop med USB-kabel"
-heroImageCredit: "Foto: Unsplash"
-heroImageSource: "https://unsplash.com/photos/phone-connected-to-laptop-usb-gP2M7M49sY"
 sources:
   - name: "Google Android Help — Transfer files between your computer and Android"
     url: "https://support.google.com/android/answer/9064445"
