@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "validate:images": "node scripts/validate-images.mjs",
+    "build": "npm run validate:images && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro"
   },
