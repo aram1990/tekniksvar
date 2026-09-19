@@ -43,3 +43,5 @@ Google erbjuder ett inbyggt rensningsverktyg på [one.google.com/storage/managem
 ## Relaterade guider
 * [OneDrive synkar inte – vanliga fel och lösningar](/artiklar/onedrive-synkar-inte-vanliga-fel-och-losningar/)
 * [Så frigör du lagringsutrymme på Android](/artiklar/sa-frigor-du-lagringsutrymme-pa-android/)
+
+* [Gmail tar inte emot mejl – 10 saker att kontrollera](/artiklar/gmail-tar-inte-emot-mejl-10-saker-att-kontrollera/)

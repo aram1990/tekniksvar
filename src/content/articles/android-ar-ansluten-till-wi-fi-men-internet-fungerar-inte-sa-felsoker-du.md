@@ -48,3 +48,5 @@ Om ingenting annat hjälper kan du återställa alla sparade Wi-Fi-, Bluetooth- 
 ## Relaterade guider
 * [Bluetooth fungerar inte på Android](/artiklar/bluetooth-fungerar-inte-pa-android-vanliga-orsaker-och-losningar/)
 * [Mobil hotspot fungerar inte på Android](/artiklar/mobil-hotspot-fungerar-inte-pa-android-8-saker-att-kontrollera/)
+
+* [Mobildata fungerar inte på Android – så felsöker du](/artiklar/mobildata-fungerar-inte-pa-android-sa-felsoker-du/)
