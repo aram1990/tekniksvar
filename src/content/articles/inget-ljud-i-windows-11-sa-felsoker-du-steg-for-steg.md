@@ -55,3 +55,5 @@ Windows 11 har en automatisk felsökare som kan återställa ljudkortet:
 ## Relaterade guider
 * [Bluetooth fungerar inte i Windows 11](/artiklar/bluetooth-fungerar-inte-i-windows-11-steg-for-steg/)
 * [Windows 11 är långsamt – 10 saker att kontrollera](/artiklar/windows-11-ar-langsomt-10-saker-att-kontrollera/)
+
+* [Windows 11 känner inte igen hörlurar – vanliga lösningar](/artiklar/windows-11-kanner-inte-igen-horlurar-vanliga-losningar/)
